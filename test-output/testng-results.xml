@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10498" started-at="2017-08-18T17:22:10Z" finished-at="2017-08-18T17:22:20Z">
+  <suite name="Default suite" duration-ms="10135" started-at="2017-11-13T20:15:28Z" finished-at="2017-11-13T20:15:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10498" started-at="2017-08-18T17:22:10Z" finished-at="2017-08-18T17:22:20Z">
+    <test name="Default test" duration-ms="10135" started-at="2017-11-13T20:15:28Z" finished-at="2017-11-13T20:15:38Z">
       <class name="firsttestngpackage.FirstTestNGFile">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:firsttestngpackage.FirstTestNGFile@63070bab]" name="setUp" is-config="true" duration-ms="39" started-at="2017-08-18T13:22:10Z" finished-at="2017-08-18T13:22:10Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:firsttestngpackage.FirstTestNGFile@514dc5f4]" name="setUp" is-config="true" duration-ms="69" started-at="2017-11-13T15:15:28Z" finished-at="2017-11-13T15:15:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gotoURL()[pri:1, instance:firsttestngpackage.FirstTestNGFile@63070bab]" name="gotoURL" duration-ms="3530" started-at="2017-08-18T13:22:10Z" finished-at="2017-08-18T13:22:13Z">
+        <test-method status="PASS" signature="gotoURL()[pri:1, instance:firsttestngpackage.FirstTestNGFile@514dc5f4]" name="gotoURL" duration-ms="4600" started-at="2017-11-13T15:15:28Z" finished-at="2017-11-13T15:15:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoURL -->
-        <test-method status="PASS" signature="SignIn()[pri:2, instance:firsttestngpackage.FirstTestNGFile@63070bab]" name="SignIn" duration-ms="6551" started-at="2017-08-18T13:22:13Z" finished-at="2017-08-18T13:22:20Z">
+        <test-method status="PASS" signature="SignIn()[pri:2, instance:firsttestngpackage.FirstTestNGFile@514dc5f4]" name="SignIn" duration-ms="5128" started-at="2017-11-13T15:15:33Z" finished-at="2017-11-13T15:15:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignIn -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:firsttestngpackage.FirstTestNGFile@63070bab]" name="afterTest" is-config="true" duration-ms="316" started-at="2017-08-18T13:22:20Z" finished-at="2017-08-18T13:22:20Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:firsttestngpackage.FirstTestNGFile@514dc5f4]" name="afterTest" is-config="true" duration-ms="198" started-at="2017-11-13T15:15:38Z" finished-at="2017-11-13T15:15:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

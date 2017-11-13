@@ -29,6 +29,7 @@ public class FirstTestNGFile {
   public void setUp() throws MalformedURLException {
 	 
 	  driver=pageObjOne.driver;
+	  System.out.println(driver);
   }
  
   @AfterTest
@@ -37,6 +38,7 @@ public class FirstTestNGFile {
 
   }
   
+ 
 
   @Test (priority=1)
   public void gotoURL() throws InterruptedException{
@@ -81,7 +83,7 @@ public class FirstTestNGFile {
   }
   
   
-
   
+ 
 
 }

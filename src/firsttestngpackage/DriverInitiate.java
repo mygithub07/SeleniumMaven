@@ -28,15 +28,12 @@ public class DriverInitiate {
 		  baseUrl= "http://newtours.demoaut.com/" ;
 	      nodeURL= "http://localhost:4444/wd/hub" ;
 	      
-	      DesiredCapabilities capabilities = new DesiredCapabilities();
+	      DesiredCapabilities capability =  DesiredCapabilities.firefox();
 	     
-	      capabilities.setCapability("BROWSER_NAME", "Android");
-	      capabilities.setCapability("VERSION", "4.4.2"); 
-	      capabilities.setCapability("deviceName","Emulator");
-	      capabilities.setCapability("platformName","Android");
-	      capabilities.setCapability("appPackage", "com.android.calculator2");
-	      capabilities.setCapability("appActivity","com.android.calculator2.Calculator");
-	      WebDriver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+	      capability.setBrowserName("firefox");
+	      capability.setPlatform(Platform.WINDOWS);
+	      capability.setVersion("");
+	      WebDriver = new RemoteWebDriver (new URL(nodeURL), capability);
 	      return WebDriver;
 	      
 	  }
