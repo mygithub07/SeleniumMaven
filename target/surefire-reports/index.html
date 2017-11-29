@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -155,16 +155,30 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Default suite&quot;&gt;
   &lt;parameter name=&quot;testParam&quot; value=&quot;test123&quot;/&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;firsttestngpackage.myListener1&quot;/&gt;
+    &lt;listener class-name=&quot;firsttestngpackage.CustomReport&quot;/&gt;
+    &lt;listener class-name=&quot;firsttestngpackage.customIndexHtmlReport&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;pTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;firsttestngpackage.customParameter&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;getParams&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- firsttestngpackage.customParameter --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- pTest --&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;mainTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;firsttestngpackage.FirstTestNGFile&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;test1&quot;/&gt;
-          &lt;include name=&quot;testingParam&quot;/&gt;
+          &lt;include name=&quot;gotoURL&quot;/&gt;
+          &lt;include name=&quot;SignIn&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- firsttestngpackage.FirstTestNGFile --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
+  &lt;/test&gt; &lt;!-- mainTest --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,7 +190,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">pTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">mainTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,11 +223,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'SignIn')
 data.setCell(0, 2, 'firsttestngpackage.FirstTestNGFile')
-data.setCell(0, 3, 6049);
+data.setCell(0, 3, 4822);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'gotoURL')
 data.setCell(1, 2, 'firsttestngpackage.FirstTestNGFile')
-data.setCell(1, 3, 3439);
+data.setCell(1, 3, 4382);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -248,15 +265,15 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">gotoURL</span>
-                <span class="method-start">41 ms</span>
+                <span class="method-start">73 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SignIn</span>
-                <span class="method-start">3483 ms</span>
+                <span class="method-start">4475 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">9538 ms</span>
+                <span class="method-start">9298 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

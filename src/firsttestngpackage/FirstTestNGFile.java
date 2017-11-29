@@ -15,8 +15,13 @@ import firsttestngpackage.SelectorRepo;
 import org.openqa.selenium.WebElement;
 import firsttestngpackage.PageObjectOne;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.log4testng.Logger;
+//import firsttestngpackage.CustomReport;;
+
 
 public class FirstTestNGFile {
+	
+	 private static final Logger LOGGER = Logger.getLogger(FirstTestNGFile.class);
 	WebDriver driver;
 	String baseUrl, nodeURL;
 	
@@ -34,6 +39,7 @@ public class FirstTestNGFile {
  
   @AfterTest
 	public void afterTest(){
+	
      driver.quit();
 
   }
@@ -42,7 +48,7 @@ public class FirstTestNGFile {
 
   @Test (priority=1)
   public void gotoURL() throws InterruptedException{
-	  
+	  LOGGER.debug("entering gotoURL()");
 	  pageObjOne.goTo();
   }
   
@@ -51,6 +57,7 @@ public class FirstTestNGFile {
   @Test (priority=2)
   
   public void SignIn() throws InterruptedException{
+	  LOGGER.debug("entering SignIn()");
 	  List<WebElement>  SignInHandler = pageObjOne.SignIn();
 	 SignInHandler.get(0).click();
 	 System.out.println(SignInHandler.get(0));

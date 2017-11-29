@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1511884542207" stop="1511884551779" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : mainTest</name>
+    <title>Default suite : mainTest</title>
+    <test-cases>
+        <test-case start="1511884542282" stop="1511884546637" status="passed">
+            <name>gotoURL</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="mainTest"/>
+                <label name="testClass" value="firsttestngpackage.FirstTestNGFile"/>
+                <label name="testMethod" value="gotoURL"/>
+                <label name="host" value="Poonams-MacBook-Air.local"/>
+                <label name="thread" value="8381@Poonams-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1511884546651" stop="1511884551513" status="passed">
+            <name>SignIn</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="mainTest"/>
+                <label name="testClass" value="firsttestngpackage.FirstTestNGFile"/>
+                <label name="testMethod" value="SignIn"/>
+                <label name="host" value="Poonams-MacBook-Air.local"/>
+                <label name="thread" value="8381@Poonams-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

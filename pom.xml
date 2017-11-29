@@ -6,8 +6,8 @@
   <name>SeleniumMaven</name>
   <description>selenim webdriver with maven</description>
   <properties>
-    <selenium.version>2.53.1</selenium.version>
-    <testng.version>6.9.10</testng.version>
+    <selenium.version>3.6.0</selenium.version>
+    <testng.version>6.10</testng.version>
     <aspectj.version>1.7.4</aspectj.version>
     <allure.version>1.5.4</allure.version>
   </properties>
@@ -46,7 +46,7 @@
                 <properties>
                     <property>
                         <name>listener</name>
-                        <value>ru.yandex.qatools.allure.testng.AllureTestListener</value>
+                        <value>ru.yandex.qatools.allure.testng.AllureTestListener,firsttestngpackage.myListener1,firsttestngpackage.CustomReport</value>
                     </property>
                 </properties>	
     </configuration>
@@ -60,7 +60,15 @@
    </plugin>
     </plugins>
   </build>
+     <repositories>
+  <repository>
+    <id>jcenter</id>
+    <name>bintray</name>
+    <url>http://jcenter.bintray.com</url>
+  </repository>
+   </repositories>
   <dependencies>
+  
   <dependency>
 		     <groupId>org.seleniumhq.selenium</groupId>
 		     <artifactId>selenium-java</artifactId>
@@ -72,6 +80,7 @@
 		     <version>${testng.version}</version>
 		   <scope>compile</scope>
   </dependency>
+  
   <dependency>
 	        <groupId>ru.yandex.qatools.allure</groupId>
 	        <artifactId>allure-testng-adaptor</artifactId>
@@ -83,6 +92,7 @@
             <version>1.7.21</version>
             <scope>test</scope>
     </dependency>
-
+    
  </dependencies>
+
 </project>
