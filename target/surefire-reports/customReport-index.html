@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,16 +100,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestngpackage.FirstTestNGFile" hash-for-method="SignIn">SignIn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestngpackage.FirstTestNGFile" hash-for-method="gotoURL">gotoURL</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestngpackage.LoginPageTest" hash-for-method="loginPageTest">loginPageTest</a> <!-- method navigator-link -->
@@ -150,6 +140,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">firsttestngpackage.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageTest">
+                  </a> <!-- loginPageTest -->
+                  <span class="method-name">loginPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">firsttestngpackage.PreloginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -179,43 +184,6 @@
                   <a name="validateUrl">
                   </a> <!-- validateUrl -->
                   <span class="method-name">validateUrl</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">firsttestngpackage.FirstTestNGFile</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SignIn">
-                  </a> <!-- SignIn -->
-                  <span class="method-name">SignIn</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="gotoURL">
-                  </a> <!-- gotoURL -->
-                  <span class="method-name">gotoURL</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">firsttestngpackage.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginPageTest">
-                  </a> <!-- loginPageTest -->
-                  <span class="method-name">loginPageTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -295,26 +263,6 @@
       &lt;/class&gt; &lt;!-- firsttestngpackage.customParameter --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- pTest --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;mainTest&quot;&gt;
-    &lt;method-selectors&gt;
-      &lt;method-selector&gt;
-        &lt;script language=&quot;beanshell&quot;&gt;
-          &lt;![CDATA[
-        groups.containsKey(&quot;smoke&quot;);
-         groups.containsKey(&quot;sanity&quot;);
-        ]]&gt;
-        &lt;/script&gt;
-      &lt;/method-selector&gt;
-    &lt;/method-selectors&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;firsttestngpackage.FirstTestNGFile&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;gotoURL&quot;/&gt;
-          &lt;include name=&quot;SignIn&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- firsttestngpackage.FirstTestNGFile --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- mainTest --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -333,9 +281,6 @@
               </li>
               <li>
                 <span class="test-name">pTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">mainTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -364,14 +309,6 @@
             <div class="test-group">
               <span class="test-group-name">sanity</span>
               <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">SignIn</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">gotoURL</span>
-                <br/>
-              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">loginPageTest</span>
                 <br/>
@@ -411,17 +348,17 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addColumn('string', 'SuccessPercentage');
 data.addColumn('string', 'Priority');
-data.addRows(7);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validateHeaderFooter')
 data.setCell(0, 2, 'firsttestngpackage.PreloginPageTest')
-data.setCell(0, 3, 181)
+data.setCell(0, 3, 602)
 data.setCell(0, 4, '100')
 data.setCell(0, 5, '0');
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateLogo')
+data.setCell(1, 1, 'validateTabs')
 data.setCell(1, 2, 'firsttestngpackage.PreloginPageTest')
-data.setCell(1, 3, 7)
+data.setCell(1, 3, 2)
 data.setCell(1, 4, '100')
 data.setCell(1, 5, '0');
 data.setCell(2, 0, 2)
@@ -431,34 +368,22 @@ data.setCell(2, 3, 2)
 data.setCell(2, 4, '100')
 data.setCell(2, 5, '0');
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateTabs')
-data.setCell(3, 2, 'firsttestngpackage.PreloginPageTest')
+data.setCell(3, 1, 'loginPageTest')
+data.setCell(3, 2, 'firsttestngpackage.LoginPageTest')
 data.setCell(3, 3, 2)
 data.setCell(3, 4, '100')
 data.setCell(3, 5, '0');
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginPageTest')
-data.setCell(4, 2, 'firsttestngpackage.LoginPageTest')
-data.setCell(4, 3, 2)
+data.setCell(4, 1, 'validateLogo')
+data.setCell(4, 2, 'firsttestngpackage.PreloginPageTest')
+data.setCell(4, 3, 1)
 data.setCell(4, 4, '100')
 data.setCell(4, 5, '0');
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'SignIn')
-data.setCell(5, 2, 'firsttestngpackage.FirstTestNGFile')
-data.setCell(5, 3, 2)
-data.setCell(5, 4, '100')
-data.setCell(5, 5, '0');
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'gotoURL')
-data.setCell(6, 2, 'firsttestngpackage.FirstTestNGFile')
-data.setCell(6, 3, 1)
-data.setCell(6, 4, '100')
-data.setCell(6, 5, '0');
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 197 ms</span>
+              <span class="suite-total-time">Total running time: 609 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -477,13 +402,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">firsttestngpackage.PreloginPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">preloginPageTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">firsttestngpackage.LoginPageTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">valiadteUsernameField</span>
@@ -495,6 +413,13 @@ return data;
                 <span class="ignored-method-name">validateForgetPassowrdField</span>
                 <br/>
                 <span class="ignored-method-name">validateRememberPasswordChrckboxField</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">firsttestngpackage.PreloginPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">preloginPageTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -513,33 +438,22 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateLogo</span>
-                <span class="method-start">202 ms</span>
+                <span class="method-start">629 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateTabs</span>
-                <span class="method-start">218 ms</span>
+                <span class="method-start">632 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateUrl</span>
-                <span class="method-start">222 ms</span>
+                <span class="method-start">636 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">firsttestngpackage.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginPageTest</span>
-                <span class="method-start">686 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">firsttestngpackage.FirstTestNGFile</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">gotoURL</span>
-                <span class="method-start">776 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">SignIn</span>
-                <span class="method-start">778 ms</span>
+                <span class="method-start">1174 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

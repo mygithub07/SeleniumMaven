@@ -8,7 +8,7 @@
   <properties />
   
   
-            <testcase name="gotoURL" time="0.001" classname="firsttestngpackage.FirstTestNGFile" />
-                <testcase name="SignIn" time="0.002" classname="firsttestngpackage.FirstTestNGFile" />
+            <testcase name="SignIn" time="0.001" classname="firsttestngpackage.FirstTestNGFile" />
+                <testcase name="gotoURL" time="0.002" classname="firsttestngpackage.FirstTestNGFile" />
       
 </testsuite>

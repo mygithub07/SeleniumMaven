@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1569791145490" stop="1569791146097" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : GroupingTest-PreloginPage</name>
+    <title>Default suite : GroupingTest-PreloginPage</title>
+    <test-cases>
+        <test-case start="1569791145816" stop="1569791145892" status="passed">
+            <name>validateHeaderFooter</name>
+            <description></description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="GroupingTest-PreloginPage"/>
+                <label name="testClass" value="firsttestngpackage.PreloginPageTest"/>
+                <label name="testMethod" value="validateHeaderFooter"/>
+                <label name="host" value="Poonams-MacBook-Air.local"/>
+                <label name="thread" value="67330@Poonams-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1569791145901" stop="1569791145945" status="passed">
+            <name>validateLogo</name>
+            <description></description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="GroupingTest-PreloginPage"/>
+                <label name="testClass" value="firsttestngpackage.PreloginPageTest"/>
+                <label name="testMethod" value="validateLogo"/>
+                <label name="host" value="Poonams-MacBook-Air.local"/>
+                <label name="thread" value="67330@Poonams-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1569791145947" stop="1569791145948" status="passed">
+            <name>validateTabs</name>
+            <description></description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="GroupingTest-PreloginPage"/>
+                <label name="testClass" value="firsttestngpackage.PreloginPageTest"/>
+                <label name="testMethod" value="validateTabs"/>
+                <label name="host" value="Poonams-MacBook-Air.local"/>
+                <label name="thread" value="67330@Poonams-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1569791145951" stop="1569791145952" status="passed">
+            <name>validateUrl</name>
+            <description></description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="GroupingTest-PreloginPage"/>
+                <label name="testClass" value="firsttestngpackage.PreloginPageTest"/>
+                <label name="testMethod" value="validateUrl"/>
+                <label name="host" value="Poonams-MacBook-Air.local"/>
+                <label name="thread" value="67330@Poonams-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

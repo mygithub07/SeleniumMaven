@@ -103,7 +103,7 @@
    </listeners>
    <parameter name="testParam" value="test123"/>
    
-  <test verbose="2" name="mainTest">
+  <!-- <test verbose="2" name="mainTest">
   
     <classes>
       <class name="firsttestngpackage.FirstTestNGFile">
@@ -115,5 +115,5 @@
            </methods>
        </class>
     </classes>
-  </test> <!-- Default test -->
+  </test>  -->
 </suite> <!-- Default suite -->
