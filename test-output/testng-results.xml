@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="11" total="13" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10890" started-at="2017-11-27T19:54:46Z" finished-at="2017-11-27T19:54:57Z">
+  <suite name="Default suite" duration-ms="1665" started-at="2019-09-12T14:01:36Z" finished-at="2019-09-12T14:01:38Z">
     <groups>
+      <group name="sanity">
+        <method signature="FirstTestNGFile.SignIn()[pri:0, instance:firsttestngpackage.FirstTestNGFile@5d00b469]" name="SignIn" class="firsttestngpackage.FirstTestNGFile"/>
+        <method signature="FirstTestNGFile.gotoURL()[pri:0, instance:firsttestngpackage.FirstTestNGFile@5d00b469]" name="gotoURL" class="firsttestngpackage.FirstTestNGFile"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Default test" duration-ms="10890" started-at="2017-11-27T19:54:46Z" finished-at="2017-11-27T19:54:57Z">
+    <test name="GroupingTest-PreloginPage" duration-ms="81" started-at="2019-09-12T14:01:36Z" finished-at="2019-09-12T14:01:37Z">
+    </test> <!-- GroupingTest-PreloginPage -->
+    <test name="GroupingTest-LoginPage" duration-ms="1" started-at="2019-09-12T14:01:38Z" finished-at="2019-09-12T14:01:38Z">
+    </test> <!-- GroupingTest-LoginPage -->
+    <test name="pTest" duration-ms="1" started-at="2019-09-12T14:01:38Z" finished-at="2019-09-12T14:01:38Z">
+    </test> <!-- pTest -->
+    <test name="mainTest" duration-ms="214" started-at="2019-09-12T14:01:38Z" finished-at="2019-09-12T14:01:38Z">
       <class name="firsttestngpackage.FirstTestNGFile">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:firsttestngpackage.FirstTestNGFile@3ae91ab3]" name="setUp" is-config="true" duration-ms="35" started-at="2017-11-27T14:54:46Z" finished-at="2017-11-27T14:54:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gotoURL()[pri:1, instance:firsttestngpackage.FirstTestNGFile@3ae91ab3]" name="gotoURL" duration-ms="4710" started-at="2017-11-27T14:54:46Z" finished-at="2017-11-27T14:54:51Z">
+        <test-method status="PASS" signature="gotoURL()[pri:0, instance:firsttestngpackage.FirstTestNGFile@5d00b469]" name="gotoURL" duration-ms="83" started-at="2019-09-12T10:01:38Z" finished-at="2019-09-12T10:01:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoURL -->
-        <test-method status="PASS" signature="SignIn()[pri:2, instance:firsttestngpackage.FirstTestNGFile@3ae91ab3]" name="SignIn" duration-ms="5613" started-at="2017-11-27T14:54:51Z" finished-at="2017-11-27T14:54:56Z">
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:firsttestngpackage.FirstTestNGFile@5d00b469]" name="SignIn" duration-ms="3" started-at="2019-09-12T10:01:38Z" finished-at="2019-09-12T10:01:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignIn -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:firsttestngpackage.FirstTestNGFile@3ae91ab3]" name="afterTest" is-config="true" duration-ms="394" started-at="2017-11-27T14:54:56Z" finished-at="2017-11-27T14:54:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
       </class> <!-- firsttestngpackage.FirstTestNGFile -->
-    </test> <!-- Default test -->
+    </test> <!-- mainTest -->
   </suite> <!-- Default suite -->
 </testng-results>

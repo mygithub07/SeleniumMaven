@@ -177,13 +177,18 @@ public class CustomReport  extends TestListenerAdapter implements IReporter {
       tw = tr.getThrowable();
       String stackTrace;
       String fullStackTrace;
+      
+      //String[] fullStackTrace;
 
       id = "stack-trace" + tr.hashCode();
       pw.append("<td>");
 
       if (null != tw) {
         fullStackTrace = Utils.longStackTrace(tw, true);
-        stackTrace = "<div><pre>" + Utils.shortStackTrace(tw, true)  + "</pre></div>";
+    	//  fullStackTrace = Utils.stackTrace(tw, true);
+       stackTrace = "<div><pre>" + Utils.shortStackTrace(tw, true)  + "</pre></div>";
+    	  
+    	 // stackTrace = "<div><pre>" + Utils.stackTrace(tw, true)  + "</pre></div>";
 
         pw.append(stackTrace);
         // JavaScript link

@@ -28,9 +28,9 @@ public class DriverInitiate {
 		  baseUrl= "http://newtours.demoaut.com/" ;
 	      nodeURL= "http://localhost:4444/wd/hub" ;
 	      
-	      DesiredCapabilities capability =  DesiredCapabilities.firefox();
+	      DesiredCapabilities capability =  DesiredCapabilities.chrome();
 	     
-	      capability.setBrowserName("firefox");
+	      capability.setBrowserName("chrome");
 	      capability.setPlatform(Platform.WINDOWS);
 	      capability.setVersion("");
 	      WebDriver = new RemoteWebDriver (new URL(nodeURL), capability);

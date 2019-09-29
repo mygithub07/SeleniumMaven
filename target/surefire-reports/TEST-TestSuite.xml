@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="9.179" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="0.061" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib"/>
@@ -25,7 +25,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/hanu/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf63438708813746740.tmp"/>
+    <property name="classworlds.conf" value="/Users/hanu/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8277557207390731264.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/hanu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -39,11 +39,11 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="hanu"/>
-    <property name="java.class.path" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="/Users/hanu/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.12.0.20190529-1915/jars/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -61,6 +61,11 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="gotoURL" classname="firsttestngpackage.FirstTestNGFile" time="4.363"/>
-  <testcase name="SignIn" classname="firsttestngpackage.FirstTestNGFile" time="4.816"/>
+  <testcase name="validateHeaderFooter" classname="firsttestngpackage.PreloginPageTest" time="0.057"/>
+  <testcase name="validateLogo" classname="firsttestngpackage.PreloginPageTest" time="0"/>
+  <testcase name="validateTabs" classname="firsttestngpackage.PreloginPageTest" time="0.001"/>
+  <testcase name="validateUrl" classname="firsttestngpackage.PreloginPageTest" time="0.001"/>
+  <testcase name="loginPageTest" classname="firsttestngpackage.LoginPageTest" time="0.001"/>
+  <testcase name="gotoURL" classname="firsttestngpackage.FirstTestNGFile" time="0.001"/>
+  <testcase name="SignIn" classname="firsttestngpackage.FirstTestNGFile" time="0"/>
 </testsuite>

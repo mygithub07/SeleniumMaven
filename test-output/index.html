@@ -54,12 +54,12 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -147,24 +147,59 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/nl/bhw79llx2l77cgj6pmz1l16w0000gn/T/testng-eclipse--1683775280/testng-customsuite.xml</span>
+            <span class="header-content">/Users/hanu/Documents/workspace/SeleniumMaven/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+  &lt;parameter name=&quot;testParam&quot; value=&quot;test123&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;firsttestngpackage.myListener1&quot;/&gt;
+    &lt;listener class-name=&quot;firsttestngpackage.CustomReport&quot;/&gt;
+    &lt;listener class-name=&quot;firsttestngpackage.customIndexHtmlReport&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;all-smoke-regression&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;define name=&quot;all-smoke-regression&quot;&gt;
+      &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;include name=&quot;regression&quot;/&gt;
+    &lt;/define&gt; &lt;!-- all-smoke-regression --&gt;
+  &lt;/groups&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;GroupingTest-PreloginPage&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;firsttestngpackage.myListener1&quot;/&gt;
-      &lt;class name=&quot;firsttestngpackage.CustomReport&quot;/&gt;
-      &lt;class name=&quot;firsttestngpackage.FirstTestNGFile&quot;/&gt;
-      &lt;class name=&quot;firsttestngpackage.PageObjectOne&quot;/&gt;
-      &lt;class name=&quot;firsttestngpackage.DriverInitiate&quot;/&gt;
-      &lt;class name=&quot;firsttestngpackage.customParameter&quot;/&gt;
-      &lt;class name=&quot;firsttestngpackage.SelectorRepo&quot;/&gt;
+      &lt;class name=&quot;firsttestngpackage.PreloginPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
+  &lt;/test&gt; &lt;!-- GroupingTest-PreloginPage --&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;GroupingTest-LoginPage&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;firsttestngpackage.LoginPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GroupingTest-LoginPage --&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;pTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;firsttestngpackage.customParameter&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;getParams&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- firsttestngpackage.customParameter --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- pTest --&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;mainTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;firsttestngpackage.FirstTestNGFile&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;gotoURL&quot;/&gt;
+          &lt;include name=&quot;SignIn&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- firsttestngpackage.FirstTestNGFile --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- mainTest --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,7 +211,16 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (7 classes)</span>
+                <span class="test-name">GroupingTest-PreloginPage (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GroupingTest-LoginPage (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">pTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">mainTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,6 +230,18 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">SignIn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">gotoURL</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -204,18 +260,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SignIn')
+data.setCell(0, 1, 'gotoURL')
 data.setCell(0, 2, 'firsttestngpackage.FirstTestNGFile')
-data.setCell(0, 3, 5613);
+data.setCell(0, 3, 83);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'gotoURL')
+data.setCell(1, 1, 'SignIn')
 data.setCell(1, 2, 'firsttestngpackage.FirstTestNGFile')
-data.setCell(1, 3, 4710);
+data.setCell(1, 3, 3);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 86 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -230,9 +286,41 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">11 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">firsttestngpackage.PreloginPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateTabs</span>
+                <br/>
+                <span class="ignored-method-name">validateUrl</span>
+                <br/>
+                <span class="ignored-method-name">validateHeaderFooter</span>
+                <br/>
+                <span class="ignored-method-name">preloginPageTest</span>
+                <br/>
+                <span class="ignored-method-name">validateLogo</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">firsttestngpackage.LoginPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginPageTest</span>
+                <br/>
+                <span class="ignored-method-name">valiadteUsernameField</span>
+                <br/>
+                <span class="ignored-method-name">validateLoginBUttonField</span>
+                <br/>
+                <span class="ignored-method-name">valiadtePasswordField</span>
+                <br/>
+                <span class="ignored-method-name">validateForgetPassowrdField</span>
+                <br/>
+                <span class="ignored-method-name">validateRememberPasswordChrckboxField</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -242,22 +330,14 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">firsttestngpackage.FirstTestNGFile</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">gotoURL</span>
-                <span class="method-start">84 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SignIn</span>
-                <span class="method-start">4815 ms</span>
+                <span class="method-start">94 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">10431 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

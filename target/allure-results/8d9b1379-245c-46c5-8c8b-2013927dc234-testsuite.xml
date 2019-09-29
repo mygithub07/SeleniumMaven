@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1568599110632" stop="1568599110682" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : GroupingTest-LoginPage</name>
+    <title>Default suite : GroupingTest-LoginPage</title>
+    <test-cases>
+        <test-case start="1568599110634" stop="1568599110635" status="passed">
+            <name>validateForgetPassowrdField</name>
+            <description></description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="GroupingTest-LoginPage"/>
+                <label name="testClass" value="firsttestngpackage.LoginPageTest"/>
+                <label name="testMethod" value="validateForgetPassowrdField"/>
+                <label name="host" value="Poonams-MacBook-Air.local"/>
+                <label name="thread" value="56521@Poonams-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1568599110637" stop="1568599110638" status="passed">
+            <name>validateRememberPasswordChrckboxField</name>
+            <description></description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="GroupingTest-LoginPage"/>
+                <label name="testClass" value="firsttestngpackage.LoginPageTest"/>
+                <label name="testMethod" value="validateRememberPasswordChrckboxField"/>
+                <label name="host" value="Poonams-MacBook-Air.local"/>
+                <label name="thread" value="56521@Poonams-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
