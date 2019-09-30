@@ -1,2 +1,2 @@
 language: java
-script: mvn clean install -DskipTests -X
+script: mvn clean install -DskipTests -DsuiteXmlFile=testng-customsuite.xml -X
