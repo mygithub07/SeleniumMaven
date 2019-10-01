@@ -2,50 +2,50 @@
 <testng-results skipped="0" failed="0" ignored="6" total="11" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1523" started-at="2019-09-29T17:07:36 EDT" finished-at="2019-09-29T17:07:37 EDT">
+  <suite name="Default suite" duration-ms="905" started-at="2019-10-01T11:49:09 EDT" finished-at="2019-10-01T11:49:10 EDT">
     <groups>
       <group name="regression">
-        <method signature="PreloginPageTest.validateLogo()[pri:0, instance:firsttestngpackage.PreloginPageTest@349c4d1c]" name="validateLogo" class="firsttestngpackage.PreloginPageTest"/>
-        <method signature="PreloginPageTest.validateTabs()[pri:0, instance:firsttestngpackage.PreloginPageTest@349c4d1c]" name="validateTabs" class="firsttestngpackage.PreloginPageTest"/>
-        <method signature="PreloginPageTest.validateUrl()[pri:0, instance:firsttestngpackage.PreloginPageTest@349c4d1c]" name="validateUrl" class="firsttestngpackage.PreloginPageTest"/>
+        <method signature="PreloginPageTest.validateLogo()[pri:0, instance:firsttestngpackage.PreloginPageTest@3701eaf6]" name="validateLogo" class="firsttestngpackage.PreloginPageTest"/>
+        <method signature="PreloginPageTest.validateTabs()[pri:0, instance:firsttestngpackage.PreloginPageTest@3701eaf6]" name="validateTabs" class="firsttestngpackage.PreloginPageTest"/>
+        <method signature="PreloginPageTest.validateUrl()[pri:0, instance:firsttestngpackage.PreloginPageTest@3701eaf6]" name="validateUrl" class="firsttestngpackage.PreloginPageTest"/>
       </group> <!-- regression -->
       <group name="sanity">
-        <method signature="PreloginPageTest.validateHeaderFooter()[pri:0, instance:firsttestngpackage.PreloginPageTest@349c4d1c]" name="validateHeaderFooter" class="firsttestngpackage.PreloginPageTest"/>
-        <method signature="PreloginPageTest.validateLogo()[pri:0, instance:firsttestngpackage.PreloginPageTest@349c4d1c]" name="validateLogo" class="firsttestngpackage.PreloginPageTest"/>
-        <method signature="PreloginPageTest.validateTabs()[pri:0, instance:firsttestngpackage.PreloginPageTest@349c4d1c]" name="validateTabs" class="firsttestngpackage.PreloginPageTest"/>
-        <method signature="PreloginPageTest.validateUrl()[pri:0, instance:firsttestngpackage.PreloginPageTest@349c4d1c]" name="validateUrl" class="firsttestngpackage.PreloginPageTest"/>
-        <method signature="LoginPageTest.loginPageTest()[pri:0, instance:firsttestngpackage.LoginPageTest@7ccd611e]" name="loginPageTest" class="firsttestngpackage.LoginPageTest"/>
+        <method signature="PreloginPageTest.validateHeaderFooter()[pri:0, instance:firsttestngpackage.PreloginPageTest@3701eaf6]" name="validateHeaderFooter" class="firsttestngpackage.PreloginPageTest"/>
+        <method signature="PreloginPageTest.validateLogo()[pri:0, instance:firsttestngpackage.PreloginPageTest@3701eaf6]" name="validateLogo" class="firsttestngpackage.PreloginPageTest"/>
+        <method signature="PreloginPageTest.validateTabs()[pri:0, instance:firsttestngpackage.PreloginPageTest@3701eaf6]" name="validateTabs" class="firsttestngpackage.PreloginPageTest"/>
+        <method signature="PreloginPageTest.validateUrl()[pri:0, instance:firsttestngpackage.PreloginPageTest@3701eaf6]" name="validateUrl" class="firsttestngpackage.PreloginPageTest"/>
+        <method signature="LoginPageTest.loginPageTest()[pri:0, instance:firsttestngpackage.LoginPageTest@2a17b7b6]" name="loginPageTest" class="firsttestngpackage.LoginPageTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="GroupingTest-PreloginPage" duration-ms="941" started-at="2019-09-29T17:07:36 EDT" finished-at="2019-09-29T17:07:37 EDT">
+    <test name="GroupingTest-PreloginPage" duration-ms="242" started-at="2019-10-01T11:49:09 EDT" finished-at="2019-10-01T11:49:09 EDT">
       <class name="firsttestngpackage.PreloginPageTest">
-        <test-method status="PASS" signature="validateHeaderFooter()[pri:0, instance:firsttestngpackage.PreloginPageTest@349c4d1c]" name="validateHeaderFooter" duration-ms="602" started-at="2019-09-29T17:07:36 EDT" finished-at="2019-09-29T17:07:37 EDT">
+        <test-method status="PASS" signature="validateHeaderFooter()[pri:0, instance:firsttestngpackage.PreloginPageTest@3701eaf6]" name="validateHeaderFooter" duration-ms="84" started-at="2019-10-01T11:49:09 EDT" finished-at="2019-10-01T11:49:09 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHeaderFooter -->
-        <test-method status="PASS" signature="validateLogo()[pri:0, instance:firsttestngpackage.PreloginPageTest@349c4d1c]" name="validateLogo" duration-ms="1" started-at="2019-09-29T17:07:37 EDT" finished-at="2019-09-29T17:07:37 EDT">
+        <test-method status="PASS" signature="validateLogo()[pri:0, instance:firsttestngpackage.PreloginPageTest@3701eaf6]" name="validateLogo" duration-ms="1" started-at="2019-10-01T11:49:09 EDT" finished-at="2019-10-01T11:49:09 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLogo -->
-        <test-method status="PASS" signature="validateTabs()[pri:0, instance:firsttestngpackage.PreloginPageTest@349c4d1c]" name="validateTabs" duration-ms="2" started-at="2019-09-29T17:07:37 EDT" finished-at="2019-09-29T17:07:37 EDT">
+        <test-method status="PASS" signature="validateTabs()[pri:0, instance:firsttestngpackage.PreloginPageTest@3701eaf6]" name="validateTabs" duration-ms="2" started-at="2019-10-01T11:49:09 EDT" finished-at="2019-10-01T11:49:09 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTabs -->
-        <test-method status="PASS" signature="validateUrl()[pri:0, instance:firsttestngpackage.PreloginPageTest@349c4d1c]" name="validateUrl" duration-ms="2" started-at="2019-09-29T17:07:37 EDT" finished-at="2019-09-29T17:07:37 EDT">
+        <test-method status="PASS" signature="validateUrl()[pri:0, instance:firsttestngpackage.PreloginPageTest@3701eaf6]" name="validateUrl" duration-ms="1" started-at="2019-10-01T11:49:09 EDT" finished-at="2019-10-01T11:49:09 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUrl -->
       </class> <!-- firsttestngpackage.PreloginPageTest -->
     </test> <!-- GroupingTest-PreloginPage -->
-    <test name="GroupingTest-LoginPage" duration-ms="5" started-at="2019-09-29T17:07:37 EDT" finished-at="2019-09-29T17:07:37 EDT">
+    <test name="GroupingTest-LoginPage" duration-ms="7" started-at="2019-10-01T11:49:09 EDT" finished-at="2019-10-01T11:49:10 EDT">
       <class name="firsttestngpackage.LoginPageTest">
-        <test-method status="PASS" signature="loginPageTest()[pri:0, instance:firsttestngpackage.LoginPageTest@7ccd611e]" name="loginPageTest" duration-ms="2" started-at="2019-09-29T17:07:37 EDT" finished-at="2019-09-29T17:07:37 EDT">
+        <test-method status="PASS" signature="loginPageTest()[pri:0, instance:firsttestngpackage.LoginPageTest@2a17b7b6]" name="loginPageTest" duration-ms="5" started-at="2019-10-01T11:49:09 EDT" finished-at="2019-10-01T11:49:10 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTest -->
       </class> <!-- firsttestngpackage.LoginPageTest -->
     </test> <!-- GroupingTest-LoginPage -->
-    <test name="pTest" duration-ms="1" started-at="2019-09-29T17:07:37 EDT" finished-at="2019-09-29T17:07:37 EDT">
+    <test name="pTest" duration-ms="1" started-at="2019-10-01T11:49:10 EDT" finished-at="2019-10-01T11:49:10 EDT">
     </test> <!-- pTest -->
   </suite> <!-- Default suite -->
 </testng-results>
