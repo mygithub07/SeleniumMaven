@@ -43,7 +43,7 @@
       <suiteXmlFile>testng-customsuite.xml</suiteXmlFile>
       </suiteXmlFiles>
       <testFailureIgnore>false</testFailureIgnore>
-                <argLine>
+             <!--   <argLine>
                     -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
                 </argLine>
                 <!--only for 1.3.* TestNG adapters. Since 1.4.0.RC4, the listener adds via ServiceLoader-->
