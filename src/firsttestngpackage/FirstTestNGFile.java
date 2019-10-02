@@ -50,7 +50,7 @@ public class FirstTestNGFile {
   //@Test (priority=1)
   @Test(groups={"sanity"})
   public void gotoURL() throws InterruptedException{
-	  LOGGER.debug("entering gotoURL()");
+	 // LOGGER.debug("entering gotoURL()");
 	 // pageObjOne.goTo();
 	  System.out.println("went to URL");
   }
@@ -60,7 +60,7 @@ public class FirstTestNGFile {
   //@Test (priority=2)
   @Test(groups={"sanity"})
   public void SignIn() throws InterruptedException{
-	  LOGGER.debug("entering SignIn()");
+	 // LOGGER.debug("entering SignIn()");
 	  System.out.println("completed signing  In");
 	 /* List<WebElement>  SignInHandler = pageObjOne.SignIn();
 	 SignInHandler.get(0).click();
