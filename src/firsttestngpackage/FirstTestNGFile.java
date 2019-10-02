@@ -95,7 +95,7 @@ public class FirstTestNGFile {
   }
   
   
-   @Test
+   @Test(groups={"sanity"})
   public void Suite2Test1() throws InterruptedException{
 	 // LOGGER.debug("entering gotoURL()");
 	 // pageObjOne.goTo();
