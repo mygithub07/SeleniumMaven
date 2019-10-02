@@ -95,7 +95,12 @@ public class FirstTestNGFile {
   }
   
   
-  
+   @Test
+  public void Suite2Test1() throws InterruptedException{
+	 // LOGGER.debug("entering gotoURL()");
+	 // pageObjOne.goTo();
+	  System.out.println("Suite2Test1");
+  }
  
 
 }
