@@ -1,0 +1,245 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>SeleniumMaven</groupId>
+  <artifactId>SeleniumMaven</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SeleniumMaven</name>
+  <description>selenim webdriver with maven</description>
+  <properties>
+    <selenium.version>3.6.0</selenium.version>
+    <testng.version>7.0.0</testng.version>
+    <aspectj.version>1.7.4</aspectj.version>
+    <allure.version>1.5.4</allure.version>
+  </properties>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+  
+ <pluginManagement> 
+  
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+
+
+ 
+  <plugin>
+			 <groupId>org.apache.maven.plugins</groupId>
+			 <artifactId>maven-surefire-plugin</artifactId>
+			 <version>2.22.1</version>
+
+			<configuration>
+						  <suiteXmlFiles>
+						  <suiteXmlFile>testng-customsuite.xml</suiteXmlFile>
+						  </suiteXmlFiles>
+						  <testFailureIgnore>false</testFailureIgnore>
+								 <!--   <argLine>
+										-javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+									</argLine>  -->
+									<!--only for 1.3.* TestNG adapters. Since 1.4.0.RC4, the listener adds via ServiceLoader-->
+									<properties>
+										<property>
+											<name>listener</name>
+											<value>ru.yandex.qatools.allure.testng.AllureTestListener</value>
+										</property>
+									</properties>	
+			</configuration>
+  </plugin>
+
+ </pluginManagement>  
+
+   <plugins>
+		 <plugin>
+		 <groupId>org.apache.maven.plugins</groupId>
+		 <artifactId>maven-surefire-plugin</artifactId>
+		 </plugin>
+
+	    <plugin>
+		 
+		 <artifactId>maven-compiler-plugin</artifactId>
+		 </plugin>
+	 
+   </plugins>
+	
+  </build>
+  
+  
+  
+  <profiles> 
+        <profile>
+            <!-- So, since you're now inheriting from the
+                 pluginManagement section and you've declared that
+                 your project uses these plugins, you can now extract
+                 the suite configuration in a separate profile like this:
+                 -->
+            <id>main-suite</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+
+                         <configuration>
+								  <suiteXmlFiles>
+								  <suiteXmlFile>testng-customsuite.xml</suiteXmlFile>
+								  </suiteXmlFiles>
+							  <testFailureIgnore>false</testFailureIgnore>
+									 <!--   <argLine>
+											-javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+										</argLine>  -->
+										<!--only for 1.3.* TestNG adapters. Since 1.4.0.RC4, the listener adds via ServiceLoader-->
+										<properties>
+											<property>
+												<name>listener</name>
+												<value>ru.yandex.qatools.allure.testng.AllureTestListener</value>
+											</property>
+										</properties>	
+                         </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+		
+		 <profile>
+            <!-- So, since you're now inheriting from the
+                 pluginManagement section and you've declared that
+                 your project uses these plugins, you can now extract
+                 the suite configuration in a separate profile like this:
+                 -->
+            <id>suite2</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+
+                         <configuration>
+								  <suiteXmlFiles>
+								  <suiteXmlFile>suite2.xml</suiteXmlFile>
+								  </suiteXmlFiles>
+							  <testFailureIgnore>false</testFailureIgnore>
+									 <!--   <argLine>
+											-javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+										</argLine>  -->
+										<!--only for 1.3.* TestNG adapters. Since 1.4.0.RC4, the listener adds via ServiceLoader-->
+										<properties>
+											<property>
+												<name>listener</name>
+												<value>ru.yandex.qatools.allure.testng.AllureTestListener</value>
+											</property>
+										</properties>	
+                         </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+	
+  
+  
+     <repositories>
+  <repository>
+    <id>jcenter</id>
+    <name>bintray</name>
+    <url>http://jcenter.bintray.com</url>
+  </repository>
+  <repository>
+        <id>java-net</id>
+        <url>http://download.java.net/maven/2</url>
+    </repository>
+   </repositories>
+  <dependencies>
+  
+  <dependency>
+		     <groupId>org.seleniumhq.selenium</groupId>
+		     <artifactId>selenium-java</artifactId>
+		     <version>${selenium.version}</version>
+  </dependency>
+  <dependency>
+		     <groupId>org.testng</groupId>
+		     <artifactId>testng</artifactId>
+		     <version>${testng.version}</version>
+		   <scope>compile</scope>
+  </dependency>
+  
+  <dependency>
+	        <groupId>ru.yandex.qatools.allure</groupId>
+	        <artifactId>allure-testng-adaptor</artifactId>
+	        <version>${allure.version}</version>
+    </dependency>
+    <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.21</version>
+            <scope>test</scope>
+    </dependency>
+   
+   <dependency>
+        <groupId>org.uncommons</groupId>
+        <artifactId>reportng</artifactId>
+        <version>1.1.4</version>
+        <scope>test</scope>
+        <exclusions>
+            <exclusion>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <dependency>
+    <groupId>com.google.inject</groupId>
+    <artifactId>guice</artifactId>
+    <version>3.0</version>
+    <scope>test</scope>
+   </dependency>
+   
+ 
+       <dependency>
+         <groupId>org.apache-extras.beanshell</groupId>
+         <artifactId>bsh</artifactId>
+         <version>2.0b6</version>
+       </dependency>
+       
+       <dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.1</version>
+  </dependency>
+
+<!-- adding below 3 dependency for error "Implementation of JAXB-API has not been found..." -->	  
+<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.0-b170201.1204</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.activation/activation -->
+<dependency>
+    <groupId>javax.activation</groupId>
+    <artifactId>activation</artifactId>
+    <version>1.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime -->
+<dependency>
+    <groupId>org.glassfish.jaxb</groupId>
+    <artifactId>jaxb-runtime</artifactId>
+    <version>2.3.0-b170127.1453</version>
+</dependency>
+ </dependencies>
+
+</project>
