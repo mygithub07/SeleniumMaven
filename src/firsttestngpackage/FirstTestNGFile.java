@@ -99,7 +99,7 @@ public class FirstTestNGFile {
   public void Suite2Test1() throws InterruptedException{
 	 // LOGGER.debug("entering gotoURL()");
 	 // pageObjOne.goTo();
-	  System.out.println("Suite2Test1");
+	  System.out.println("test2 in suite2");
   }
  
 
