@@ -1,4 +1,4 @@
-package helper;
+package firsttestngpackage;
 
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
