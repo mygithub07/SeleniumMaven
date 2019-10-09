@@ -28,7 +28,7 @@ public class suiteListener implements ISuiteListener {
     }
     @Override
     public void onFinish(ISuite suite) {
-		final ISuiteResult res = suite.getResults();
+		final  res = suite.getResults();
            ITestContext  context =  res.getTestContext()  ;
 
          final Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
