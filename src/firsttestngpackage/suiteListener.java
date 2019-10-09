@@ -11,7 +11,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 
-public class LogSuiteListener implements ISuiteListener {
+public class suiteListener implements ISuiteListener {
     @Override
     public void onStart(ISuite suite) {
       /*  try (PrintStream out = new PrintStream(new FileOutputStream("/tmp/test-list.txt"))) {
