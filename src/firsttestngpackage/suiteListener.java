@@ -31,7 +31,7 @@ public class suiteListener implements ISuiteListener {
          final Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
                  for (ITestResult result : failedTests) {
 					 
-					 log.Info("failed method...." + result.getMethod() )
+					 log.Info("failed method...." + result.getMethod() ) ;
 					 
 				 }
 
