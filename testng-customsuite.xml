@@ -7,7 +7,7 @@
     <suite-file path="suite2.xml" />
    
  </suite-files>
-	
+	<!--
   	 <groups>
 		
  	<define name="smoke">
@@ -30,7 +30,7 @@
 
       </run>  
 	   	    
-</groups>   
+</groups>  --> 
 <method-selectors>
     <method-selector>
        <script language="beanshell"><![CDATA[
