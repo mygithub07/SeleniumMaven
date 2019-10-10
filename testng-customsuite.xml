@@ -35,7 +35,7 @@
     <method-selector>
        <script language="beanshell"><![CDATA[
 
-        (groups.containsKey("smoke") && groups.containsKey("smoke"));
+        (groups.containsKey("smoke") && groups.containsKey("sanity"));
          
         ]]>
         </script>  
