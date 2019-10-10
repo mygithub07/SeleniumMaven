@@ -5,7 +5,7 @@
       
 <suite-files>
     <suite-file path="suite2.xml" />
-    <suite-file path="testng-customsuite.xml" />
+   
  </suite-files>
 	
   	 <groups>
