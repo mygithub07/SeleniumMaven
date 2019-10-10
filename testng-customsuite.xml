@@ -39,24 +39,7 @@
         ]]>
         </script>  
         
-  <!--      <script language="beanshell"><![CDATA[   
-        Boolean runTest = false;
-            String groupsName = System.getProperty("GROUPS");
 
-            if (groupsName != null && groupsName != ""){
-                StringTokenizer groupsTagList = new StringTokenizer(groupsName, ",");
-                while (groupsTagList.hasMoreTokens()) {
-                    if(groups.containsKey(groupsTagList.nextToken().trim()){
-                        runTest = true;
-                        break;
-                    }
-                }
-            }else{
-                runTest = true;
-            } 
-            return runTest;
-             ]]>
-             </script>    -->
              
      </method-selector>
     </method-selectors>
@@ -64,30 +47,19 @@
  <test verbose="2"  name="GroupingTest-PreloginPage">
 		
 
-	<!-- 	<groups>
-            <run>
-             <include name="regression"/>
-           </run>
-     </groups>   -->
-		
 		<classes>
 				<class name="firsttestngpackage.PreloginPageTest">
 			
-             </class>
+                             </class>
 		</classes>
-</test>  
+ </test>  
 <test verbose="2"  name="GroupingTest-LoginPage">
 		
-<!-- 		<groups>
-            <run>
-             <include name="smoke"/>
-           </run>
-     </groups>  -->
-     
+ 
 		<classes>
 				<class name="firsttestngpackage.LoginPageTest">
 			
-             </class>
+                                </class>
 		</classes>
 </test> 
   <test verbose="2" name="pTest">
