@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="suite1" thread-count="5" group-by-instances="false" verbose="1" allow-return-values="false" parallel="false" data-provider-thread-count="10" junit="false" configfailurepolicy="skip" preserve-order="true" skipfailedinvocationcounts="false">
+<suite name="testng-customsuite" thread-count="5" group-by-instances="false" verbose="1" allow-return-values="false" parallel="false" data-provider-thread-count="10" junit="false" configfailurepolicy="skip" preserve-order="true" skipfailedinvocationcounts="false">
 
       
 <suite-files>
