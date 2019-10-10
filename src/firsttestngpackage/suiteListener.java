@@ -15,6 +15,7 @@ import java.util.*;
 public class suiteListener implements ISuiteListener {
 	
 	Map<java.lang.String,ISuiteResult> res = new HashMap<java.lang.String,ISuiteResult>() ;
+	 ITestContext  context;
     @Override
     public void onStart(ISuite suite) {
       /*  try (PrintStream out = new PrintStream(new FileOutputStream("/tmp/test-list.txt"))) {
@@ -32,7 +33,7 @@ public class suiteListener implements ISuiteListener {
           
 	            for (ISuiteResult r : res.values()) {
  
-	                   ITestContext  context =  r.getTestContext()  ;
+	                     context =  r.getTestContext()  ;
 		    }
 	    
          final Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
