@@ -10,7 +10,7 @@
     <suite-file path="suite2.xml" />
     <suite-file path="testng-customsuite.xml" />
  </suite-files>
- <!-- 	 <groups>
+  	 <groups>
 		
  	<define name="smoke">
 			<include name="smoke"/>
@@ -32,7 +32,7 @@
 
       </run>  
 	   	    
-</groups>   -->
+</groups>   
 <method-selectors>
     <method-selector>
        <script language="beanshell"><![CDATA[
