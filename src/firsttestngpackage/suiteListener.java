@@ -32,7 +32,7 @@ public class suiteListener implements ISuiteListener {
           
 	            for (ISuiteResult r : res.values()) {
  
-	                   ITestContext  context =  res.getTestContext()  ;
+	                   ITestContext  context =  r.getTestContext()  ;
 		    }
 	    
          final Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
