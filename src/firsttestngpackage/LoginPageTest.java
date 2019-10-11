@@ -1,6 +1,7 @@
 package firsttestngpackage;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
 
 public class LoginPageTest {
 
@@ -28,7 +29,9 @@ public class LoginPageTest {
 
     @Test(groups={"smoke"})
     public void validateForgetPassowrdField(){
+	    
         System.out.println("forgot passowrd field present");
+	    Assert.assertEquals(1,2);
     }
 
     @Test(groups={"smoke"})
