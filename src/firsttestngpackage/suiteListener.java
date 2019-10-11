@@ -5,6 +5,7 @@ import org.testng.ISuiteListener;
 import org.testng.ISuiteResult;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
+import org.testng.ITestNGMethod;
 
 
 import java.io.FileOutputStream;
@@ -38,14 +39,20 @@ public class suiteListener implements ISuiteListener {
 	            for (ISuiteResult r : res.values()) {
  
 	                     context =  r.getTestContext()  ;
+			    System.out.println(context);
 		    }
 	    
-         final Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
+            IResultMap failedTests = context.getFailedTests();
+	    List list = new ArrayList();
+             list = failedTests.getAllMethods();
+	    list.forEach(System.out::println);
+	    
+	    /*final Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
                  for (ITestResult result : failedTests) {
 					 
 					 System.out.println("failed method...." + result.getMethod() ) ;
 					 
-				 }
+				 } */
 
 		
 	}
