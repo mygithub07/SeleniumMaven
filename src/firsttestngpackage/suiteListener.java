@@ -31,6 +31,8 @@ public class suiteListener implements ISuiteListener {
     }
     @Override
     public void onFinish(ISuite suite) {
+	    
+	      System.out.println("suite finished");
 		final Map<java.lang.String,ISuiteResult>  res = suite.getResults();
           
 	            for (ISuiteResult r : res.values()) {
