@@ -18,6 +18,8 @@ public class suiteListener implements ISuiteListener {
 	 ITestContext  context;
     @Override
     public void onStart(ISuite suite) {
+	    
+	    System.out.println("suite started executing");
       /*  try (PrintStream out = new PrintStream(new FileOutputStream("/tmp/test-list.txt"))) {
                 suite.getAllMethods().stream()
                 .map(m -> m.getTestClass().getName() + "." + m.getMethodName())
