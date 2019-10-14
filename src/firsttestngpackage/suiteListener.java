@@ -41,7 +41,7 @@ public class suiteListener implements ISuiteListener {
 	            for (ISuiteResult r : res.values()) {
  
 	                     context =  r.getTestContext()  ;
-			    System.out.println(context);
+			    System.out.println("context...."+ context);
 		    }
 	    
             IResultMap failedTests = context.getFailedTests();
@@ -50,6 +50,7 @@ public class suiteListener implements ISuiteListener {
              java.util.Collection<ITestNGMethod> c = failedTests.getAllMethods();
 	    List<ITestNGMethod> list = new ArrayList<ITestNGMethod>(c );
 	     //System.out.println(Arrays.toString(arr));
+	   System.out.println("printing methods....");
 	    list.forEach(System.out::println);
 	    
 	    /*final Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
