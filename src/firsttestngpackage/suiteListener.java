@@ -6,6 +6,8 @@ import org.testng.ISuiteResult;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.ITestNGMethod;
+import org.testng.IResultMap;
+
 
 
 import java.io.FileOutputStream;
