@@ -51,8 +51,8 @@ public class suiteListener implements ISuiteListener {
 	    
             
 	     System.out.println("number of failed tests..."+ context.getFailedTests().size());
-	     failedTests = context.getFailedTests().getAllResults() ;
-	     passedTests = context.getPassedTests().getAllResults() ;
+	     java.util.Set<ITestResult> failedTests = context.getFailedTests().getAllResults() ;
+	     java.util.Set<ITestResult> passedTests = context.getPassedTests().getAllResults() ;
 	    // List list = new ArrayList();
 	   
 	    
