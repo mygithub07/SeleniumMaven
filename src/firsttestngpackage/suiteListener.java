@@ -42,6 +42,7 @@ public class suiteListener implements ISuiteListener {
  
 	                     context =  r.getTestContext()  ;
 			    System.out.println("context...."+ context);
+			     System.out.println("getName context...."+ context.getName());
 		    }
 	    
             
