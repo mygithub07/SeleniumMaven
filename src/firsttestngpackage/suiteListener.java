@@ -52,6 +52,7 @@ public class suiteListener implements ISuiteListener {
 	     //System.out.println(Arrays.toString(arr));
 	   System.out.println("printing methods....");
 	    list.forEach(System.out::println);
+	    System.out.println("done printing....");
 	    
 	    /*final Set<ITestResult> failedTests = context.getFailedTests().getAllResults();
                  for (ITestResult result : failedTests) {
