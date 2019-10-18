@@ -62,7 +62,7 @@ public class suiteListener implements ISuiteListener {
                 }
               for (ITestResult tempF : failedTests) {
             ITestNGMethod methodF = tempF.getMethod();
-              System.out.println("passed method...."+ context.failedTests().getResults(methodF).getName());
+              System.out.println("passed method...."+ context.getfailedTests().getResults(methodF).getName());
                 }
 		     
 	/*     
