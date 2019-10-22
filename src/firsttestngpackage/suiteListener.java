@@ -43,6 +43,7 @@ public class suiteListener implements ISuiteListener {
 	                     context =  r.getTestContext()  ;
 			    System.out.println("context...."+ context);
 			     System.out.println("getName context...."+ context.getName());
+			     System.out.println("number of failed tests..."+ context.getFailedTests().getAllResults().size());
 		    }
 	    
 	    
@@ -50,7 +51,7 @@ public class suiteListener implements ISuiteListener {
 	    
 	    
             
-	     System.out.println("number of failed tests..."+ context.getFailedTests().getAllResults().size());
+	   //  System.out.println("number of failed tests..."+ context.getFailedTests().getAllResults().size());
 	     java.util.Set<ITestResult> failedTests = context.getFailedTests().getAllResults() ;
 	     java.util.Set<ITestResult> passedTests = context.getPassedTests().getAllResults() ;
 	    // List list = new ArrayList();
