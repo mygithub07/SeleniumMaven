@@ -44,6 +44,15 @@ public class suiteListener implements ISuiteListener {
 			    System.out.println("context...."+ context);
 			     System.out.println("getName context...."+ context.getName());
 			     System.out.println("number of failed tests..."+ context.getFailedTests().getAllResults().size());
+			    Iterator<ITestResult> failedTestCases =context.getFailedTests().getAllResults().iterator();
+			    while (failedTestCases.hasNext()) {
+                            System.out.println("failedTestCases...");
+                            ITestResult failedTestCase = failedTestCases.next();
+                            ITestNGMethod method = failedTestCase.getMethod();
+			 	 testName =    failedTestCase.getName();
+			  System.out.println("failed method.."+ method);   
+		           System.out.println("failed testName.."+ testName);   
+			    }
 		    }
 	    
 	    
