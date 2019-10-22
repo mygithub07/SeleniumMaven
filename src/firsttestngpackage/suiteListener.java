@@ -49,7 +49,7 @@ public class suiteListener implements ISuiteListener {
                             System.out.println("failedTestCases...");
                             ITestResult failedTestCase = failedTestCases.next();
                             ITestNGMethod method = failedTestCase.getMethod();
-			 	string testName =    failedTestCase.getName();
+			 	java.lang.String testName =    failedTestCase.getName();
 			  System.out.println("failed method.."+ method);   
 		           System.out.println("failed testName.."+ testName);   
 			    }
