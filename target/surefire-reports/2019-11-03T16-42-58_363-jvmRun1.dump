@@ -1,0 +1,19 @@
+# Created at 2019-11-03T16:42:59.748
+org.testng.TestNGException: 
+Cannot find class in classpath: RerunFailedTests
+	at org.testng.xml.XmlClass.loadClass(XmlClass.java:75)
+	at org.testng.xml.XmlClass.init(XmlClass.java:67)
+	at org.testng.xml.XmlClass.init(XmlClass.java:58)
+	at org.testng.xml.XmlClass.<init>(XmlClass.java:34)
+	at firsttestngpackage.SuiteAlterer.alter(SuiteAlterer.java:26)
+	at org.testng.TestNG.runSuiteAlterationListeners(TestNG.java:1037)
+	at org.testng.TestNG.run(TestNG.java:997)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+

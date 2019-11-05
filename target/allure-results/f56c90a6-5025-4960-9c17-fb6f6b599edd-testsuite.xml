@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1572813221023" stop="1572813221099" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>main-suite : GroupingTest-PreloginPage</name>
+    <title>main-suite : GroupingTest-PreloginPage</title>
+    <test-cases>
+        <test-case start="1572813221078" stop="1572813221090" status="passed">
+            <name>preloginPageTest</name>
+            <description></description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="main-suite"/>
+                <label name="testGroup" value="GroupingTest-PreloginPage"/>
+                <label name="testClass" value="firsttestngpackage.PreloginPageTest"/>
+                <label name="testMethod" value="preloginPageTest"/>
+                <label name="host" value="Poonams-MacBook-Air.local"/>
+                <label name="thread" value="1227@Poonams-MacBook-Air.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">2 suites, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-main_suite">
+              <span class="suite-name border-failed">main-suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="test-xml-main_suite">
                     <span>testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-main_suite">
                     <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>2 groups</span>
+                  <a href="#" class="navigator-link " panel-name="group-main_suite">
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-main_suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-main_suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-main_suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-main_suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,41 +91,105 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-main_suite" class="hide-methods failed suite-main_suite"> (hide)</a> <!-- hide-methods failed suite-main_suite -->
+                      <a href="#" panel-name="suite-main_suite" class="show-methods failed suite-main_suite"> (show)</a> <!-- show-methods failed suite-main_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-main_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-main_suite" title="firsttestngpackage.LoginPageTest" hash-for-method="validateForgetPassowrdField">validateForgetPassowrdField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-main_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-main_suite" class="hide-methods passed suite-main_suite"> (hide)</a> <!-- hide-methods passed suite-main_suite -->
+                      <a href="#" panel-name="suite-main_suite" class="show-methods passed suite-main_suite"> (show)</a> <!-- show-methods passed suite-main_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-main_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestngpackage.LoginPageTest" hash-for-method="loginPageTest">loginPageTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-main_suite" title="firsttestngpackage.PreloginPageTest" hash-for-method="preloginPageTest">preloginPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestngpackage.PreloginPageTest" hash-for-method="validateHeaderFooter">validateHeaderFooter</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-main_suite" title="firsttestngpackage.LoginPageTest" hash-for-method="validateRememberPasswordChrckboxField">validateRememberPasswordChrckboxField</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestngpackage.PreloginPageTest" hash-for-method="validateLogo">validateLogo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestngpackage.PreloginPageTest" hash-for-method="validateTabs">validateTabs</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="firsttestngpackage.PreloginPageTest" hash-for-method="validateUrl">validateUrl</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-main_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-suite2">
+              <span class="suite-name border-passed">suite2</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-suite2">
+                    <span>suite2.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-suite2">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-suite2">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-suite2">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-suite2">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-suite2">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-suite2">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">0 methods,   </span>
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -136,8 +200,64 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-main_suite" class="panel main_suite">
+          <div class="suite-main_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">firsttestngpackage.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateForgetPassowrdField">
+                  </a> <!-- validateForgetPassowrdField -->
+                  <span class="method-name">validateForgetPassowrdField</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at firsttestngpackage.LoginPageTest.validateForgetPassowrdField(LoginPageTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-main_suite-class-failed -->
+          <div class="suite-main_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">firsttestngpackage.LoginPageTest</span>
@@ -145,14 +265,14 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginPageTest">
-                  </a> <!-- loginPageTest -->
-                  <span class="method-name">loginPageTest</span>
+                  <a name="validateRememberPasswordChrckboxField">
+                  </a> <!-- validateRememberPasswordChrckboxField -->
+                  <span class="method-name">validateRememberPasswordChrckboxField</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-          <div class="suite-Default_suite-class-passed">
+          </div> <!-- suite-main_suite-class-passed -->
+          <div class="suite-main_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">firsttestngpackage.PreloginPageTest</span>
@@ -160,36 +280,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateHeaderFooter">
-                  </a> <!-- validateHeaderFooter -->
-                  <span class="method-name">validateHeaderFooter</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateLogo">
-                  </a> <!-- validateLogo -->
-                  <span class="method-name">validateLogo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateTabs">
-                  </a> <!-- validateTabs -->
-                  <span class="method-name">validateTabs</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateUrl">
-                  </a> <!-- validateUrl -->
-                  <span class="method-name">validateUrl</span>
+                  <a name="preloginPageTest">
+                  </a> <!-- preloginPageTest -->
+                  <span class="method-name">preloginPageTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-main_suite-class-passed -->
+        </div> <!-- panel main_suite -->
+        <div panel-name="suite-suite2" class="panel suite2">
+        </div> <!-- panel suite2 -->
+        <div panel-name="test-xml-main_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">/Users/hanu/Documents/workspace/SeleniumMaven/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -197,9 +298,10 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Default suite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;main-suite&quot;&gt;
   &lt;parameter name=&quot;testParam&quot; value=&quot;test123&quot;/&gt;
   &lt;listeners&gt;
+    &lt;listener class-name=&quot;firsttestngpackage.suiteListener&quot;/&gt;
     &lt;listener class-name=&quot;firsttestngpackage.myListener1&quot;/&gt;
     &lt;listener class-name=&quot;firsttestngpackage.CustomReport&quot;/&gt;
     &lt;listener class-name=&quot;firsttestngpackage.customIndexHtmlReport&quot;/&gt;
@@ -208,19 +310,24 @@
   &lt;method-selector&gt;
     &lt;script language=&quot;beanshell&quot;&gt;
       &lt;![CDATA[
-        groups.containsKey(&quot;smoke&quot;);
-         groups.containsKey(&quot;sanity&quot;);
+
+        groups.containsKey(&quot;smoke&quot;) ;
+         
         ]]&gt;
     &lt;/script&gt;
   &lt;/method-selector&gt;
   &lt;/method-selectors&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;suite2.xml&quot;/&gt;
+  &lt;/suite-files&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;GroupingTest-PreloginPage&quot;&gt;
     &lt;method-selectors&gt;
       &lt;method-selector&gt;
         &lt;script language=&quot;beanshell&quot;&gt;
           &lt;![CDATA[
-        groups.containsKey(&quot;smoke&quot;);
-         groups.containsKey(&quot;sanity&quot;);
+
+        groups.containsKey(&quot;smoke&quot;) ;
+         
         ]]&gt;
         &lt;/script&gt;
       &lt;/method-selector&gt;
@@ -234,8 +341,9 @@
       &lt;method-selector&gt;
         &lt;script language=&quot;beanshell&quot;&gt;
           &lt;![CDATA[
-        groups.containsKey(&quot;smoke&quot;);
-         groups.containsKey(&quot;sanity&quot;);
+
+        groups.containsKey(&quot;smoke&quot;) ;
+         
         ]]&gt;
         &lt;/script&gt;
       &lt;/method-selector&gt;
@@ -249,8 +357,9 @@
       &lt;method-selector&gt;
         &lt;script language=&quot;beanshell&quot;&gt;
           &lt;![CDATA[
-        groups.containsKey(&quot;smoke&quot;);
-         groups.containsKey(&quot;sanity&quot;);
+
+        groups.containsKey(&quot;smoke&quot;) ;
+         
         ]]&gt;
         &lt;/script&gt;
       &lt;/method-selector&gt;
@@ -263,13 +372,53 @@
       &lt;/class&gt; &lt;!-- firsttestngpackage.customParameter --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- pTest --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+&lt;/suite&gt; &lt;!-- main-suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="test-xml-suite2" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">/Users/hanu/Documents/workspace/SeleniumMaven/suite2.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;suite2&quot;&gt;
+  &lt;parameter name=&quot;testParam&quot; value=&quot;test123&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;firsttestngpackage.suiteListener&quot;/&gt;
+    &lt;listener class-name=&quot;firsttestngpackage.myListener1&quot;/&gt;
+    &lt;listener class-name=&quot;firsttestngpackage.CustomReport&quot;/&gt;
+    &lt;listener class-name=&quot;firsttestngpackage.customIndexHtmlReport&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;suite2Test1&quot;&gt;
+    &lt;method-selectors&gt;
+      &lt;method-selector&gt;
+        &lt;script language=&quot;beanshell&quot;&gt;
+          &lt;![CDATA[
+
+        groups.containsKey(&quot;smoke&quot;) ;
+         
+        ]]&gt;
+        &lt;/script&gt;
+      &lt;/method-selector&gt;
+    &lt;/method-selectors&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;firsttestngpackage.FirstTestNGFile&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Suite2Test1&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- firsttestngpackage.FirstTestNGFile --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- suite2Test1 --&gt;
+&lt;/suite&gt; &lt;!-- suite2 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-main_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for main-suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
@@ -285,135 +434,176 @@
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="testlist-suite2" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Tests for suite2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">suite2Test1 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-main_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for main-suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">regression</span>
+              <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">validateLogo</span>
+                <span class="method-in-group-name">preloginPageTest</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">validateTabs</span>
+                <span class="method-in-group-name">validateForgetPassowrdField</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">validateUrl</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">sanity</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginPageTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">validateHeaderFooter</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">validateLogo</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">validateTabs</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">validateUrl</span>
+                <span class="method-in-group-name">validateRememberPasswordChrckboxField</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="group-suite2" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Groups for suite2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-main_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for main-suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_main_suite');
+function tableData_main_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateHeaderFooter')
+data.setCell(0, 1, 'preloginPageTest')
 data.setCell(0, 2, 'firsttestngpackage.PreloginPageTest')
-data.setCell(0, 3, 181);
+data.setCell(0, 3, 14);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateTabs')
-data.setCell(1, 2, 'firsttestngpackage.PreloginPageTest')
-data.setCell(1, 3, 2);
+data.setCell(1, 1, 'validateForgetPassowrdField')
+data.setCell(1, 2, 'firsttestngpackage.LoginPageTest')
+data.setCell(1, 3, 6);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateUrl')
-data.setCell(2, 2, 'firsttestngpackage.PreloginPageTest')
-data.setCell(2, 3, 2);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateLogo')
-data.setCell(3, 2, 'firsttestngpackage.PreloginPageTest')
-data.setCell(3, 3, 2);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginPageTest')
-data.setCell(4, 2, 'firsttestngpackage.LoginPageTest')
-data.setCell(4, 3, 2);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(2, 1, 'validateRememberPasswordChrckboxField')
+data.setCell(2, 2, 'firsttestngpackage.LoginPageTest')
+data.setCell(2, 3, 1);
+window.suiteTableData['main_suite']= { tableData: data, tableDiv: 'times-div-main_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 189 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 21 ms</span>
+              <div id="times-div-main_suite">
+              </div> <!-- times-div-main_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="times-suite2" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Times for suite2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_suite2');
+function tableData_suite2() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['suite2']= { tableData: data, tableDiv: 'times-div-suite2'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-suite2">
+              </div> <!-- times-div-suite2 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-main_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for main-suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="reporter-suite2" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">Reporter output for suite2</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-main_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">firsttestngpackage.LoginPageTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginPageTest</span>
+                <br/>
                 <span class="ignored-method-name">valiadteUsernameField</span>
                 <br/>
                 <span class="ignored-method-name">validateLoginBUttonField</span>
                 <br/>
                 <span class="ignored-method-name">valiadtePasswordField</span>
                 <br/>
-                <span class="ignored-method-name">validateForgetPassowrdField</span>
-                <br/>
-                <span class="ignored-method-name">validateRememberPasswordChrckboxField</span>
-                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">firsttestngpackage.PreloginPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">preloginPageTest</span>
+                <span class="ignored-method-name">validateTabs</span>
+                <br/>
+                <span class="ignored-method-name">validateUrl</span>
+                <br/>
+                <span class="ignored-method-name">validateHeaderFooter</span>
+                <br/>
+                <span class="ignored-method-name">validateLogo</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="ignored-methods-suite2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">firsttestngpackage.FirstTestNGFile</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">SignIn</span>
+                <br/>
+                <span class="ignored-method-name">gotoURL</span>
+                <br/>
+                <span class="ignored-method-name">Suite2Test1</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-main_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -421,28 +611,29 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">firsttestngpackage.PreloginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">validateHeaderFooter</span>
+                <span class="method-name">preloginPageTest</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validateLogo</span>
-                <span class="method-start">197 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validateTabs</span>
-                <span class="method-start">200 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validateUrl</span>
-                <span class="method-start">205 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">firsttestngpackage.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">loginPageTest</span>
-                <span class="method-start">962 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateForgetPassowrdField</span>
+                <span class="method-start">62 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateRememberPasswordChrckboxField</span>
+                <span class="method-start">89 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-suite2" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

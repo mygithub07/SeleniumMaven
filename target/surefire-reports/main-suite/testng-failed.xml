@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [main-suite]">
+  <parameter name="testParam" value="test123"/>
+  <listeners>
+    <listener class-name="firsttestngpackage.suiteListener"/>
+    <listener class-name="firsttestngpackage.myListener1"/>
+    <listener class-name="firsttestngpackage.CustomReport"/>
+    <listener class-name="firsttestngpackage.customIndexHtmlReport"/>
+  </listeners>
+  <method-selectors>
+  <method-selector>
+    <script language="beanshell">
+      <![CDATA[
+
+        groups.containsKey("smoke") ;
+         
+        ]]>
+    </script>
+  </method-selector>
+  </method-selectors>
+  <test thread-count="5" verbose="0" name="GroupingTest-LoginPage(failed)">
+    <method-selectors>
+      <method-selector>
+        <script language="beanshell">
+          <![CDATA[
+
+        groups.containsKey("smoke") ;
+         
+        ]]>
+        </script>
+      </method-selector>
+    </method-selectors>
+    <classes>
+      <class name="firsttestngpackage.LoginPageTest">
+        <methods>
+          <include name="validateForgetPassowrdField"/>
+        </methods>
+      </class> <!-- firsttestngpackage.LoginPageTest -->
+    </classes>
+  </test> <!-- GroupingTest-LoginPage(failed) -->
+</suite> <!-- Failed suite [main-suite] -->

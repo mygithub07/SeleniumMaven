@@ -19,6 +19,8 @@ public class suiteListener implements ISuiteListener {
 	
 	Map<java.lang.String,ISuiteResult> res = new HashMap<java.lang.String,ISuiteResult>() ;
 	 ITestContext  context;
+	 public static ITestNGMethod method;
+	 public static String failedMethodName;
     @Override
     public void onStart(ISuite suite) {
 	    
@@ -48,7 +50,8 @@ public class suiteListener implements ISuiteListener {
 			    while (failedTestCases.hasNext()) {
                             System.out.println("failedTestCases...");
                             ITestResult failedTestCase = failedTestCases.next();
-                            ITestNGMethod method = failedTestCase.getMethod();
+                             method = failedTestCase.getMethod();
+                             failedMethodName = method.getMethodName();
 			 	java.lang.String testName =    failedTestCase.getName();
 			  System.out.println("failed method.."+ method);   
 		           System.out.println("failed testName.."+ testName);   
