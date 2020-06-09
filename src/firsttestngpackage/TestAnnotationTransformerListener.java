@@ -7,12 +7,13 @@ import org.testng.IAnnotationTransformer;
 import org.testng.annotations.ITestAnnotation;
 
 public class TestAnnotationTransformerListener implements IAnnotationTransformer {
-
+                List<> attArrayList = new ArrayList<>();
     @Override
     public void transform(ITestAnnotation annotation, Class testClass,
             Constructor testConstructor, Method testMethod) {        
         if (testMethod.getName().equals("validateForgetPassowrdField")) {
-            System.out.println("attributes for annotation on method" + testMethod.getName()+ ":   "+ annotation.getAttributes()); 
+            attArrayList = annotation.getAttributes();
+            System.out.println("attributes for annotation on method" + testMethod.getName()+ ":   "+ attArrayList[0]); 
             
         } 
         /*
