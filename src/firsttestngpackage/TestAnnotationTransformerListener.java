@@ -11,7 +11,7 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
     @Override
     public void transform(ITestAnnotation annotation, Class testClass,
             Constructor testConstructor, Method testMethod) {        
-        if (testMethod.getName().equals("Suite2Test1")) {
+        if (testMethod.getName().equals("validateForgetPassowrdField")) {
             System.out.println("attributes for annotation on method" + testMethod.getName()+ ":   "+ annotation.getAttributes()); 
             
         } 
