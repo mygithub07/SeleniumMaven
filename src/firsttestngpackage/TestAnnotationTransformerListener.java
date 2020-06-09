@@ -7,12 +7,13 @@ import org.testng.IAnnotationTransformer;
 import org.testng.annotations.ITestAnnotation;
 
 public class TestAnnotationTransformerListener implements IAnnotationTransformer {
-               String Attrarray[] = new String[5]
+               
+                 List<org.testng.annotations> list = new ArrayList<org.testng.annotations>();
     @Override
     public void transform(ITestAnnotation annotation, Class testClass,
             Constructor testConstructor, Method testMethod) {        
         if (testMethod.getName().equals("validateForgetPassowrdField")) {
-            Attrarray = annotation.getAttributes();
+            list = annotation.getAttributes();
             System.out.println("attributes for annotation on method" + testMethod.getName()+ ":   "+ Attrarray[0]); 
             
         } 
