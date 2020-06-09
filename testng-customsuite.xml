@@ -81,6 +81,7 @@
       <listener class-name = "firsttestngpackage.myListener1" />
       <listener class-name = "firsttestngpackage.CustomReport" /> 
       <listener class-name = "firsttestngpackage.customIndexHtmlReport" />
+      <listener class-name = "firsttestngpackage.TestAnnotationTransformerListener" />
    </listeners>
    <parameter name="testParam" value="test123"/>
    <!--
