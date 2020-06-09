@@ -14,15 +14,17 @@ import java.util.List;
 import java.util.Random;
 
 public class SuiteAlterer implements IAlterSuiteListener {
-	
+	ArrayList<Integer> numbers = new ArrayList<Integer>();   
 	Random random = new Random();
     @Override
     public void alter(java.util.List<XmlSuite> suites) {
         XmlSuite suite = suites.get(0);
         System.out.println("suite name..." +suite.getName());
-        
-        XmlTest xmlTest = new XmlTest(suite);
-        int n = random.nextInt(1000);
+  
+	    
+	    if(suiteListener.failedMethodName!=null){
+	    XmlTest xmlTest = new XmlTest(suite);
+        int n = random.nextInt(100);
         xmlTest.setName("newTest_"+n);
         System.out.println("newTest_"+suiteListener.failedMethodName+n);
         List<XmlClass> classes = new ArrayList<XmlClass>();
@@ -35,7 +37,8 @@ public class SuiteAlterer implements IAlterSuiteListener {
          xmlClass.setIncludedMethods(includeMethods);
          classes.add(xmlClass);
          xmlTest.setXmlClasses(classes) ;
-         
+         }
+	    
          TestNG tng = new TestNG();
          tng.setXmlSuites(suites);
          tng.run();
