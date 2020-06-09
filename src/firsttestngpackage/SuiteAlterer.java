@@ -1,3 +1,4 @@
+/*
 package firsttestngpackage;
 
 import org.testng.IAlterSuiteListener;
@@ -45,3 +46,5 @@ public class SuiteAlterer implements IAlterSuiteListener {
         
     }
 }  
+
+*/
