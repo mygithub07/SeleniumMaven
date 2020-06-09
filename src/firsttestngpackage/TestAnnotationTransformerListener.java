@@ -13,7 +13,7 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
   
               // ArrayList<org.testng.annotations.CustomAttribute> list = new ArrayList<org.testng.annotations.CustomAttribute>();
                
-              <org.testng.annotations.CustomAttribute>[] list = new <org.testng.annotations.CustomAttribute>[10]
+              CustomAttribute [] list = new CustomAttribute [10]
     @Override
     public void transform(ITestAnnotation annotation, Class testClass,
             Constructor testConstructor, Method testMethod) {        
