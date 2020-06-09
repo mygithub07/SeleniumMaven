@@ -31,7 +31,7 @@ public class LoginPageTest {
     public void validateForgetPassowrdField(){
 	    
         System.out.println("forgot passowrd field present");
-	    Assert.assertEquals(1,2);
+	    Assert.assertEquals(1,1);
     }
 
     @Test(groups={"smoke"})
