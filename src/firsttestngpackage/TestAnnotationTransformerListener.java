@@ -1,3 +1,4 @@
+package firsttestngpackage;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
@@ -10,11 +11,12 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
     @Override
     public void transform(ITestAnnotation annotation, Class testClass,
             Constructor testConstructor, Method testMethod) {        
-        if (testMethod.getName().equals("testcase1")) {
-            System.out.println("set data provider for " + testMethod.getName()); 
-            annotation.setDataProviderClass(DataProviderFactory.class);
-            annotation.setDataProvider("getDp1");
-        } else if (testMethod.getName().equals("testcase2")) {
+        if (testMethod.getName().equals("Suite2Test1")) {
+            System.out.println("attributes for annotation on method" + testMethod.getName()+ ":   "+ annotation.getAttributes()); 
+            
+        } 
+        /*
+        else if (testMethod.getName().equals("testcase2")) {
             System.out.println("set data provider for " + testMethod.getName()); 
             annotation.setDataProviderClass(DataProviderFactory.class);
             annotation.setDataProvider("getDp2");
@@ -22,5 +24,6 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
             System.out.println("Disable " + testMethod.getName()); 
             annotation.setEnabled(false);
         }
+        */
     }
 }
