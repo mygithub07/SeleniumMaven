@@ -13,11 +13,11 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
   
               // ArrayList<org.testng.annotations.CustomAttribute> list = new ArrayList<org.testng.annotations.CustomAttribute>();
                
-              org.testng.annotations.CustomAttribute [] list = new org.testng.annotations.CustomAttribute[100];
+              org.testng.annotations.CustomAttribute [] list = new org.testng.annotations.CustomAttribute[10];
     @Override
     public void transform(ITestAnnotation annotation, Class testClass,
             Constructor testConstructor, Method testMethod) {        
-        if (testMethod.getName().equals("validateForgetPassowrdField")) {
+        if (testMethod.getName().equals("validateRememberPasswordChrckboxField")) {
             list = annotation.getAttributes();
           for (int i = 0; i < list.length; i++)
           { 
