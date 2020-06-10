@@ -19,7 +19,11 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
             Constructor testConstructor, Method testMethod) {        
         if (testMethod.getName().equals("validateForgetPassowrdField")) {
             list = annotation.getAttributes();
-            System.out.println("attributes for annotation on method" + testMethod.getName()+ ":   "+ list[0]); 
+          for (int i = 0; i < list.length; i++)
+          { 
+            System.out.println("attributes for annotation on method" + testMethod.getName()+ ":   "+ list[0]);
+            }  
+            
             
         } 
         /*
