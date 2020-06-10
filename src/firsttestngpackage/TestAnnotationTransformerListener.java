@@ -17,7 +17,7 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
     @Override
     public void transform(ITestAnnotation annotation, Class testClass,
             Constructor testConstructor, Method testMethod) {        
-        if (testMethod.getName()=="validateRememberPasswordChrckboxField") {
+        if (testMethod.getName()=="preloginPageTest") {
             list = annotation.getAttributes();
           for (int i = 0; i < list.length; i++)
           { 
