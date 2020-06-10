@@ -16,7 +16,9 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
               org.testng.annotations.CustomAttribute [] list = new org.testng.annotations.CustomAttribute[10];
     @Override
     public void transform(ITestAnnotation annotation, Class testClass,
-            Constructor testConstructor, Method testMethod) {        
+            Constructor testConstructor, Method testMethod) {  
+      
+        System.out.println("method name from transformer:  " + testMethod.getName());
         if (testMethod.getName()=="preloginPageTest") {
             list = annotation.getAttributes();
           for (int i = 0; i < list.length; i++)
