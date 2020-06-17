@@ -32,14 +32,14 @@ public class PageObjectOne{
 		return WDriver;
 	  }
 	
-	 @Test(groups={"smoke"})
+	
 	public static void goTo() throws InterruptedException{
 		 System.out.println("DRIVER :  " + PageObjectOne.driver); 
 		 PageObjectOne.driver.get(SelectorRepo.url);
 		 Thread.sleep(3000);
 		
 	}
-	   @Test(groups={"smoke"})
+	  
 	  public static List<WebElement> SignIn(){
 		  
 		  WebElement email = PageObjectOne.driver.findElement(By.cssSelector(SelectorRepo.emailAddress));
