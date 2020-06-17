@@ -58,7 +58,7 @@ public class LoginPageTest {
 	 public void gotourl()throws InterruptedException{
 		//PageObjectOne.goTo();
 		 
-		System.out.println("driver from gotourl method " + PageObjectOne.driver)
+		System.out.println("driver from gotourl method " + PageObjectOne.driver);
 	 }
 	
 	  @Test(groups={"smoke"})
