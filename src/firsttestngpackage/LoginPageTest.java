@@ -9,11 +9,12 @@ public class LoginPageTest {
 
 	public  static WebDriver driver;
 	//public  static  firsttestngpackage.PageObjectOne pgo1;	
-	
+	/*
 	 public WebDriver LoginPageTest(){
-             driver =  pgo1.driver;
+             driver =  PageObjectOne.driver;
 		 return driver;
          }
+	 */
 	
 	@Test(groups={"sanity"})
     public void validLoginTest(){
@@ -51,12 +52,12 @@ public class LoginPageTest {
 	
       @Test(groups={"smoke"})
 	 public void goto(){
-		 firsttestngpackage.PageObjectOne.goTo();
+		PageObjectOne.goTo();
 	 }
 	
 	  @Test(groups={"smoke"})
 	 public void signin(){
-		 firsttestngpackage.PageObjectOne.SignIn();
+		PageObjectOne.SignIn();
 	 }
 	 
 }
