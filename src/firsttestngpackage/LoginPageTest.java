@@ -8,9 +8,10 @@ import firsttestngpackage.PageObjectOne;
 public class LoginPageTest {
 
 	public  static WebDriver driver;
-		
+	public  static  firsttestngpackage.PageObjectOne pgo1;	
+	
 	 public WebDriver LoginPageTest(){
-             driver =  PageObjectOne.driver;
+             driver =  pgo1.driver;
 		 return driver;
          }
 	
@@ -50,11 +51,11 @@ public class LoginPageTest {
 	
       @Test(groups={"smoke"})
 	 public void goto(){
-		 PageObjectOne.goto();
+		 pgo1.goTo();
 	 }
 	
 	  @Test(groups={"smoke"})
 	 public void signin(){
-		 PageObjectOne.signin();
+		 pgo1.SignIn();
 	 }
 }
