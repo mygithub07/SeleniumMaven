@@ -8,7 +8,7 @@ import firsttestngpackage.PageObjectOne;
 public class LoginPageTest {
 
 	public  static WebDriver driver;
-	public  static  firsttestngpackage.PageObjectOne pgo1;	
+	//public  static  firsttestngpackage.PageObjectOne pgo1;	
 	
 	 public WebDriver LoginPageTest(){
              driver =  pgo1.driver;
@@ -48,15 +48,15 @@ public class LoginPageTest {
         System.out.println("Remember passowrd checkbox present");
 	     System.out.println("driver from validateRememberPasswordChrckboxField method " + driver);
     }
-	/*
+	
       @Test(groups={"smoke"})
 	 public void goto(){
-		 pgo1.goTo();
+		 firsttestngpackage.PageObjectOne.goTo();
 	 }
 	
 	  @Test(groups={"smoke"})
 	 public void signin(){
-		 pgo1.SignIn();
+		 firsttestngpackage.PageObjectOne.SignIn();
 	 }
-	 */
+	 
 }
