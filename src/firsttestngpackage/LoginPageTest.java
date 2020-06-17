@@ -13,12 +13,12 @@ public class LoginPageTest {
 	public  static WebDriver driver;
 	public static List<WebElement> webelementlist;
 	//public  static  firsttestngpackage.PageObjectOne pgo1;	
-	/*
-	 public WebDriver LoginPageTest(){
+	
+	 public WebDriver LoginPageTest(WebDriver PageObjectOne.driver){
              driver =  PageObjectOne.driver;
-		 return driver;
+		
          }
-	 */
+	 
 	
 	@Test(groups={"sanity"})
     public void validLoginTest(){
@@ -58,7 +58,7 @@ public class LoginPageTest {
 	 public void gotourl()throws InterruptedException{
 		//PageObjectOne.goTo();
 		 
-		System.out.println("driver from gotourl method " + PageObjectOne.driver);
+		System.out.println("driver from gotourl method " + driver);
 	 }
 	
 	  @Test(groups={"smoke"})
