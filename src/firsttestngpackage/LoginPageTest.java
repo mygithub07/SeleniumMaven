@@ -2,13 +2,21 @@ package firsttestngpackage;
 
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.openqa.selenium.WebDriver;
+import firsttestngpackage.PageObjectOne;
 
 public class LoginPageTest {
 
+	public  static WebDriver driver;
+		
+	 public WebDriver LoginPageTest(){
+             driver =  PageObjectOne.driver;
+		 return driver;
+         }
 	
 	@Test(groups={"sanity"})
-    public void loginPageTest(){
-        System.out.println("LoginPageTest");
+    public void validLoginTest(){
+        System.out.println("validLoginTest");
     }
 
 
@@ -37,5 +45,6 @@ public class LoginPageTest {
     @Test(groups={"smoke"})
     public void validateRememberPasswordChrckboxField(){
         System.out.println("Remember passowrd checkbox present");
+	     System.out.println("driver from validateRememberPasswordChrckboxField method " + driver);
     }
 }
