@@ -14,7 +14,7 @@ public class LoginPageTest {
 	public static List<WebElement> webelementlist;
 	//public  static  firsttestngpackage.PageObjectOne pgo1;	
 	
-	 public WebDriver LoginPageTest(WebDriver PageObjectOne.driver){
+	 public WebDriver LoginPageTest(){
              driver =  PageObjectOne.driver;
 		
          }
