@@ -51,7 +51,7 @@ public class LoginPageTest {
     }
 	
       @Test(groups={"smoke"})
-	 public void goto(){
+	 public void gotourl(){
 		PageObjectOne.goTo();
 	 }
 	
