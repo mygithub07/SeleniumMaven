@@ -12,8 +12,11 @@ public class PageObjectOne{
 	
 	 static WebDriver WDriver;
 	
-	public  static WebDriver driver =  getWebDriver();
-   
+	public  static WebDriver driver;
+       
+	  public  static WebDriver PageObjectOne(){
+	        return driver = getWebDriver() ;
+	  }
 
 	public  static WebDriver getWebDriver()  {
 		try{
