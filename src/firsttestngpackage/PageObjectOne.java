@@ -12,7 +12,7 @@ public class PageObjectOne{
 	
 	 static WebDriver WDriver;
 	
-	public  WebDriver driver =  getWebDriver();
+	public  static WebDriver driver =  getWebDriver();
    
 
 	public   WebDriver getWebDriver()  {
@@ -29,8 +29,8 @@ public class PageObjectOne{
 	
 	
 	public void goTo() throws InterruptedException{
-		 System.out.println("DRIVER :  " + driver); 
-		 driver.get(SelectorRepo.url);
+		 System.out.println("DRIVER :  " + PageObjectOne.driver); 
+		 PageObjectOne.driver.get(SelectorRepo.url);
 		 Thread.sleep(3000);
 		
 	}
@@ -38,10 +38,10 @@ public class PageObjectOne{
 	
 	  public List<WebElement> SignIn(){
 		  
-		  WebElement email = driver.findElement(By.cssSelector(SelectorRepo.emailAddress));
-		  WebElement password = driver.findElement(By.cssSelector(SelectorRepo.password));
+		  WebElement email = PageObjectOne.driver.findElement(By.cssSelector(SelectorRepo.emailAddress));
+		  WebElement password = PageObjectOne.driver.findElement(By.cssSelector(SelectorRepo.password));
 	
-		  WebElement ButtonSignIn = driver.findElement(By.cssSelector(SelectorRepo.SignInButton));
+		  WebElement ButtonSignIn = PageObjectOne.driver.findElement(By.cssSelector(SelectorRepo.SignInButton));
 		
 		  List<WebElement> SignInFunction = new ArrayList<WebElement>();
 		  SignInFunction.add(email);
