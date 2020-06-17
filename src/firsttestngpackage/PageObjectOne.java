@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import firsttestngpackage.DriverInitiate;
+import org.testng.annotations.Test;
+import org.testng.Assert;
 
 public class PageObjectOne{
 	
@@ -30,15 +32,14 @@ public class PageObjectOne{
 		return WDriver;
 	  }
 	
-	
+	 @Test(groups={"smoke"})
 	public void goTo() throws InterruptedException{
 		 System.out.println("DRIVER :  " + PageObjectOne.driver); 
 		 PageObjectOne.driver.get(SelectorRepo.url);
 		 Thread.sleep(3000);
 		
 	}
-	
-	
+	   @Test(groups={"smoke"})
 	  public List<WebElement> SignIn(){
 		  
 		  WebElement email = PageObjectOne.driver.findElement(By.cssSelector(SelectorRepo.emailAddress));
