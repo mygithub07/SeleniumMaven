@@ -15,7 +15,7 @@ public class PageObjectOne{
 	public  static WebDriver driver =  getWebDriver();
    
 
-	public   WebDriver getWebDriver()  {
+	public  static WebDriver getWebDriver()  {
 		try{
 		DriverInitiate getDriver  =  DriverInitiate.getInstance();
 		WDriver = getDriver.InitiateDriver();
