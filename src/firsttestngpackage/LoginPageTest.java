@@ -48,7 +48,7 @@ public class LoginPageTest {
         System.out.println("Remember passowrd checkbox present");
 	     System.out.println("driver from validateRememberPasswordChrckboxField method " + driver);
     }
-	
+	/*
       @Test(groups={"smoke"})
 	 public void goto(){
 		 pgo1.goTo();
@@ -58,4 +58,5 @@ public class LoginPageTest {
 	 public void signin(){
 		 pgo1.SignIn();
 	 }
+	 */
 }
