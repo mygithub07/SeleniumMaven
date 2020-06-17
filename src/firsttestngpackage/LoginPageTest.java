@@ -51,12 +51,14 @@ public class LoginPageTest {
     @Test(groups={"smoke"})
     public void validateRememberPasswordChrckboxField(){
         System.out.println("Remember passowrd checkbox present");
-	     System.out.println("driver from validateRememberPasswordChrckboxField method " + driver);
+	    
     }
 	
       @Test(groups={"smoke"})
 	 public void gotourl()throws InterruptedException{
-		PageObjectOne.goTo();
+		//PageObjectOne.goTo();
+		 
+		System.out.println("driver from gotourl method " + PageObjectOne.driver)
 	 }
 	
 	  @Test(groups={"smoke"})
