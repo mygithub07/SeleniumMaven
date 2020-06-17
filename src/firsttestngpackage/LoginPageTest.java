@@ -60,7 +60,7 @@ public class LoginPageTest {
 	 }
 	
 	  @Test(groups={"smoke"})
-	 public List<WebElement> signin(){
+	 public void signin(){
 		 webelementlist = new ArrayList<WebElement>();
 		webelementlist=PageObjectOne.SignIn();
 	 }
