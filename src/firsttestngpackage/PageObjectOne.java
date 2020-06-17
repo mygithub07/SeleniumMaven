@@ -33,14 +33,14 @@ public class PageObjectOne{
 	  }
 	
 	 @Test(groups={"smoke"})
-	public void goTo() throws InterruptedException{
+	public static void goTo() throws InterruptedException{
 		 System.out.println("DRIVER :  " + PageObjectOne.driver); 
 		 PageObjectOne.driver.get(SelectorRepo.url);
 		 Thread.sleep(3000);
 		
 	}
 	   @Test(groups={"smoke"})
-	  public List<WebElement> SignIn(){
+	  public static List<WebElement> SignIn(){
 		  
 		  WebElement email = PageObjectOne.driver.findElement(By.cssSelector(SelectorRepo.emailAddress));
 		  WebElement password = PageObjectOne.driver.findElement(By.cssSelector(SelectorRepo.password));
