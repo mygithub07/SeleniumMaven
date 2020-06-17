@@ -4,10 +4,12 @@ import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
 import firsttestngpackage.PageObjectOne;
+import org.openqa.selenium.WebElement;
 
 public class LoginPageTest {
 
 	public  static WebDriver driver;
+	public static List<WebElement> webelementlist;
 	//public  static  firsttestngpackage.PageObjectOne pgo1;	
 	/*
 	 public WebDriver LoginPageTest(){
@@ -51,13 +53,13 @@ public class LoginPageTest {
     }
 	
       @Test(groups={"smoke"})
-	 public void gotourl(){
+	 public void gotourl()throws InterruptedException{
 		PageObjectOne.goTo();
 	 }
 	
 	  @Test(groups={"smoke"})
-	 public void signin(){
-		PageObjectOne.SignIn();
+	 public List<WebElement> signin(){
+		webelementlist=PageObjectOne.SignIn();
 	 }
 	 
 }
