@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 import org.testng.annotations.Guice;
-import com.google.inject;
+import com.google.inject.Inject;
 
 
 @Guice(modules = {PageObjectOne.class})
