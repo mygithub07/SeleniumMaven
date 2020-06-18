@@ -3,15 +3,24 @@ language: java
 dist: trusty
 addons:
   chrome: stable # have Travis install Chrome stable.
-cache:
-  yarn: true
-  directories:
-    - node_modules
-install:
-  - yarn
-script:
-  - yarn test
-
+install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
+  - wget -N http://chromedriver.storage.googleapis.com/http://chromedriver.storage.googleapis.com/84.0.4147.30/chromedriver_linux64.zip -P ~/
+  - unzip ~/chromedriver_linux64.zip -d ~/
+  - rm ~/chromedriver_linux64.zip
+  - sudo mv -f ~/chromedriver /usr/local/share/
+  - sudo chmod +x /usr/local/share/chromedriver
+  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+#cache:
+ # yarn: true
+ # directories:
+ #   - node_modules
+#install:
+ # - yarn
+#script:
+#  - yarn test
+script: 
+  - whereis google-chrome-stable
+  - whereis chromedriver
 
 script: mvn clean test -P main-suite
 
