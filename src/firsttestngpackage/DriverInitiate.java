@@ -43,7 +43,7 @@ public class DriverInitiate {
            chromeOptions.setBinary("/usr/bin/chromium-browser");
            chromeOptions.addArguments("--headless");
            desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-           WebDriver driver = new RemoteWebDriver(url, desiredCapabilities);
+           WebDriver driver = new RemoteWebDriver(new URL(url), desiredCapabilities);
 	      return driver;
 	      
 	  }
