@@ -40,11 +40,11 @@ public class DriverInitiate {
 	   url= "http://google.com";
 	   DesiredCapabilities desiredCapabilities =  DesiredCapabilities.chrome();
 	   final ChromeOptions chromeOptions = new ChromeOptions();
-           chromeOptions.setBinary("/usr/bin/chromium-browser");
+           chromeOptions.setBinary("/usr/bin/google-chrome-stable");
            chromeOptions.addArguments("--headless");
            desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-           //WebDriver driver = new RemoteWebDriver(new URL(url), desiredCapabilities);
-	   WebDriver driver = new RemoteWebDriver(desiredCapabilities);
+           WebDriver driver = new RemoteWebDriver(new URL(url), desiredCapabilities);
+	   //WebDriver driver = new RemoteWebDriver(desiredCapabilities);
 	      return driver;
 	      
 	  }
