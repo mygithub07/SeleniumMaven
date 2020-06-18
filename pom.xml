@@ -163,11 +163,6 @@
    </repositories>
   <dependencies>
   
-<dependency>
-      <groupId>com.google.inject</groupId>
-      <artifactId>guice</artifactId>
-      <version>4.2.3</version>
-</dependency>
   <dependency>
 		     <groupId>org.seleniumhq.selenium</groupId>
 		     <artifactId>selenium-java</artifactId>
@@ -207,7 +202,7 @@
     <dependency>
     <groupId>com.google.inject</groupId>
     <artifactId>guice</artifactId>
-    <version>3.0</version>
+    <version>4.2.3</version>
     <scope>test</scope>
    </dependency>
    
