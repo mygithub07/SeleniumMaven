@@ -33,7 +33,8 @@ public class DriverInitiate {
 	      capability.setBrowserName("chrome");
 	      capability.setPlatform(Platform.WINDOWS);
 	      capability.setVersion("");
-	      WebDriver = new RemoteWebDriver (new URL(nodeURL), capability);
+	    //  WebDriver = new RemoteWebDriver (new URL(nodeURL), capability);
+	     WebDriver = new RemoteWebDriver (capability);
 	      return WebDriver;
 	      
 	  }
