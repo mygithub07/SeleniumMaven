@@ -18,7 +18,7 @@ public class PageObjectOne implements Module{
 	
 	public  static WebDriver driver;
        
-	  public  void  PageObjectOne(Binder binder){
+	  public  void  configure(Binder binder){
 	         driver = getWebDriver() ;
 		 binder.bind(WebDriver.class).toInstance(driver);
 		  
