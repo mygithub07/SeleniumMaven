@@ -2,7 +2,7 @@ package firsttestngpackage;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Guice;
-import com.google.inject.Inject;
+import com.google.inject;
 import org.openqa.selenium.WebDriver;
 
 @Guice(modules = {PageObjectOne.class})
