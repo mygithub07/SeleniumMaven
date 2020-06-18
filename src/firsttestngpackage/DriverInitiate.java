@@ -6,6 +6,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverInitiate {
 	WebDriver WebDriver;
@@ -25,7 +26,7 @@ public class DriverInitiate {
 
    /* Other methods protected by singleton-ness */
    public  WebDriver InitiateDriver() throws MalformedURLException {
-		  baseUrl= "http://newtours.demoaut.com/" ;
+	   /*  baseUrl= "http://newtours.demoaut.com/" ;
 	      nodeURL= "http://localhost:4444/wd/hub" ;
 	      
 	      DesiredCapabilities capability =  DesiredCapabilities.chrome();
@@ -35,7 +36,15 @@ public class DriverInitiate {
 	      capability.setVersion("");
 	    //  WebDriver = new RemoteWebDriver (new URL(nodeURL), capability);
 	     WebDriver = new RemoteWebDriver (capability);
-	      return WebDriver;
+	     */
+	   url= "http://google.com"
+	   DesiredCapabilities desiredCapabilities =  DesiredCapabilities.chrome();
+	   final ChromeOptions chromeOptions = new ChromeOptions();
+           chromeOptions.setBinary("/usr/bin/chromium-browser");
+           chromeOptions.addArguments("--headless");
+           desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+           WebDriver driver = new RemoteWebDriver(url, desiredCapabilities);
+	      return driver;
 	      
 	  }
 }
