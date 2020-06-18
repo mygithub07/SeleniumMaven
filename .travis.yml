@@ -2,8 +2,8 @@ sudo: required
 language: java
 before_script:
 - wget http://chromedriver.storage.googleapis.com/84.0.4147.30/chromedriver_linux64.zip
-- mkdir /home/travis/virtualenv/python2.7.12/bin
-- unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python2.7.12/bin/
+- mkdir /home/travis/test/
+- unzip chromedriver_linux64.zip -d /home/travis/test/
 - export CHROME_BIN=chromium-browser
 
 script: mvn clean test -P main-suite
