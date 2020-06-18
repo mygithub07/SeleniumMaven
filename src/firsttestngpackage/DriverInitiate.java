@@ -37,7 +37,7 @@ public class DriverInitiate {
 	    //  WebDriver = new RemoteWebDriver (new URL(nodeURL), capability);
 	     WebDriver = new RemoteWebDriver (capability);
 	     */
-	   url= "http://google.com"
+	   url= "http://google.com";
 	   DesiredCapabilities desiredCapabilities =  DesiredCapabilities.chrome();
 	   final ChromeOptions chromeOptions = new ChromeOptions();
            chromeOptions.setBinary("/usr/bin/chromium-browser");
