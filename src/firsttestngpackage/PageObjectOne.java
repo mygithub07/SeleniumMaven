@@ -9,15 +9,19 @@ import org.openqa.selenium.WebElement;
 import firsttestngpackage.DriverInitiate;
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import com.google.inject.Binder;
+import com.google.inject.Module;
 
-public class PageObjectOne{
+public class PageObjectOne implements Module{
 	
 	 static WebDriver WDriver;
 	
 	public  static WebDriver driver;
        
-	  public  static WebDriver PageObjectOne(){
-	        return driver = getWebDriver() ;
+	  public  void  PageObjectOne(Binder binder){
+	         driver = getWebDriver() ;
+		 binder.bind(WebDriver.class).toInstance(driver);
+		  
 	  }
 
 	public  static WebDriver getWebDriver()  {
