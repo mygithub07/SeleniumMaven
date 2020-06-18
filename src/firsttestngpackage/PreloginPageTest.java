@@ -1,12 +1,20 @@
 package firsttestngpackage;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Guice;
+import com.google.inject.Inject;
+import org.openqa.selenium.WebDriver;
 
+@Guice(modules = {PageObjectOne.class})
 public class PreloginPageTest {
+	
+	@Inject
+      WebDriver driver;
 	
 	@Test(groups={"smoke"})
 	public void preloginPageTest(){
-	    System.out.println("PreloginPageTest");
+	    //System.out.println("PreloginPageTest");
+	    System.out.println("driver from preloginPageTest method " + driver);
 	}
 	@Test(groups={"sanity","regression"})
 	public void validateLogo(){
