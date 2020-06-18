@@ -7,17 +7,22 @@ import firsttestngpackage.PageObjectOne;
 import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
+import org.testng.annotations.Guice;
+import com.google.inject.Inject;
 
+
+@Guice(modules = {PageObjectOne.class})
 public class LoginPageTest {
 
-	public  static WebDriver driver;
+	@Inject
+      WebDriver driver;
 	public static List<WebElement> webelementlist;
 	//public  static  firsttestngpackage.PageObjectOne pgo1;	
-	
+	/*
 	 public WebDriver LoginPageTest(){
              driver =  PageObjectOne.driver;
 	      return driver;
-         }
+         } */
 	 
 	
 	@Test(groups={"sanity"})
