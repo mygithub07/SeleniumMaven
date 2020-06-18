@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverInitiate {
 	WebDriver WebDriver;
-	String baseUrl, nodeURL;
+	String baseUrl, nodeURL, url;
 
    private static DriverInitiate driverInstance = new DriverInitiate( );
 
