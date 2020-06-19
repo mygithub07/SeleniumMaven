@@ -11,19 +11,24 @@ import org.testng.annotations.Test;
 import org.testng.Assert;
 import com.google.inject.Binder;
 import com.google.inject.Module;
+import org.testng.annotations.Guice;
+import com.google.inject.Inject;
 
-public class PageObjectOne implements Module{
+@Guice(modules = {DriverInitiate.class})
+public class PageObjectOne {
 	
-	 static WebDriver WDriver;
-	
-	public  static WebDriver driver;
-       
+	// static WebDriver WDriver;
+	@Inject
+      WebDriver driver;
+	//public  static WebDriver driver;
+       /*
 	  public  void  configure(Binder binder){
 	         driver = getWebDriver() ;
 		 binder.bind(WebDriver.class).toInstance(driver);
 		  
 	  }
-
+*/
+	/*
 	public  static WebDriver getWebDriver()  {
 		try{
 		DriverInitiate getDriver  =  DriverInitiate.getInstance();
@@ -35,6 +40,8 @@ public class PageObjectOne implements Module{
 		}
 		return WDriver;
 	  }
+	
+	*/
 	
 	
 	public static void goTo() throws InterruptedException{
