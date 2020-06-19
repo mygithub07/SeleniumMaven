@@ -11,7 +11,7 @@ import com.google.inject.Binder;
 import com.google.inject.Module;
 import org.testng.annotations.Guice;
 import com.google.inject.Inject;
-com.google.inject.AbstractModule;
+import com.google.inject.AbstractModule;
 
 public class DriverInitiate implements AbstractModule{
 	
