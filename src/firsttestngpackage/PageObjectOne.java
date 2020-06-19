@@ -19,7 +19,7 @@ public class PageObjectOne {
 	
 	// static WebDriver WDriver;
 	@Inject
-      WebDriver driver;
+      public static WebDriver driver;
 	//public  static WebDriver driver;
        /*
 	  public  void  configure(Binder binder){
