@@ -60,7 +60,8 @@ public class DriverInitiate implements Module{
 	  } */
 	
 	
-	 public  void configure()  { 
+	 @Override
+	public  void configure()  { 
 	        DesiredCapabilities capability =  DesiredCapabilities.chrome();
 	     
 	      capability.setBrowserName("chrome");
