@@ -11,8 +11,9 @@ import com.google.inject.Binder;
 import com.google.inject.Module;
 import org.testng.annotations.Guice;
 import com.google.inject.Inject;
+com.google.inject.AbstractModule;
 
-public class DriverInitiate implements Module{
+public class DriverInitiate implements AbstractModule{
 	
 	WebDriver WebDriver;
 	String baseUrl, nodeURL, url;
@@ -76,6 +77,7 @@ public class DriverInitiate implements Module{
            WebDriver driver = new RemoteWebDriver(new URL(url), desiredCapabilities);
 		  binder.bind(WebDriver.class).toInstance(driver);
 	 }
+	
 	
 	
 	
