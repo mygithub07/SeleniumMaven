@@ -60,7 +60,7 @@ public class DriverInitiate implements Module{
 	  } */
 	
 	
-	 public  void configure() throws MalformedURLException { 
+	 public  void configure()  { 
 	        DesiredCapabilities capability =  DesiredCapabilities.chrome();
 	     
 	      capability.setBrowserName("chrome");
