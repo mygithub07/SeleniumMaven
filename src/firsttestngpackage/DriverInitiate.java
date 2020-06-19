@@ -61,7 +61,7 @@ public class DriverInitiate implements Module{
 	
 	
 	 @Override
-	public  void configure()  { 
+	public  void configure(Binder binder)  { 
 	        DesiredCapabilities capability =  DesiredCapabilities.chrome();
 	     
 	      capability.setBrowserName("chrome");
