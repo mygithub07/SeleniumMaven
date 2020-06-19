@@ -13,7 +13,7 @@ import org.testng.annotations.Guice;
 import com.google.inject.Inject;
 import com.google.inject.AbstractModule;
 
-public class DriverInitiate implements AbstractModule{
+public class DriverInitiate extends AbstractModule{
 	
 	WebDriver WebDriver;
 	String baseUrl, nodeURL, url;
