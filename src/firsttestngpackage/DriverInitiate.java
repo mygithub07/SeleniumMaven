@@ -61,7 +61,7 @@ public class DriverInitiate implements Module{
 	
 	
 	 @Override
-	public  void configure(Binder binder) throw MalformedURLException { 
+	public  void configure(Binder binder) throws MalformedURLException { 
 	        DesiredCapabilities capability =  DesiredCapabilities.chrome();
 	     
 	      capability.setBrowserName("chrome");
