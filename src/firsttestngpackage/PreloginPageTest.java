@@ -5,7 +5,7 @@ import org.testng.annotations.Guice;
 import com.google.inject.Inject;
 import org.openqa.selenium.WebDriver;
 
-@Guice(modules = {PageObjectOne.class})
+@Guice(modules = {DriverInitiate.class})
 public class PreloginPageTest {
 	
 	@Inject
