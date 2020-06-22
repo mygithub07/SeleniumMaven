@@ -15,7 +15,7 @@ import com.google.inject.AbstractModule;
 
 public class DriverInitiate extends AbstractModule{
 	
-	WebDriver WebDriver;
+	WebDriver driver;
 	String baseUrl, nodeURL, url;
 
   // private static DriverInitiate driverInstance = new DriverInitiate( );
@@ -62,7 +62,7 @@ public class DriverInitiate extends AbstractModule{
 	
 	
 	 @Override
-	public  void configure(Binder binder) throws MalformedURLException { 
+	public  static WebDriver InitiateDriver() throws MalformedURLException { 
 	        DesiredCapabilities capability =  DesiredCapabilities.chrome();
 	     
 	      capability.setBrowserName("chrome");
@@ -74,11 +74,15 @@ public class DriverInitiate extends AbstractModule{
            chromeOptions.setBinary("/usr/bin/google-chrome-stable");
            chromeOptions.addArguments("--headless");
            desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-           WebDriver driver = new RemoteWebDriver(new URL(url), desiredCapabilities);
-		  binder.bind(WebDriver.class).toInstance(driver);
+           WebDriver d = new RemoteWebDriver(new URL(url), desiredCapabilities);
+		return d;
+		
 	 }
 	
-	
-	
+	public  void configure(Binder binder) { 
+		
+	     binder.bind(WebDriver.class).toInstance(driver);
+		driver = DriverInitiate.InitiateDriver();
+	}
 	
 }
