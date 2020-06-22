@@ -83,8 +83,13 @@ public class DriverInitiate implements Module{
 	@Override
 	public  void configure(Binder binder) { 
 		    
+	try{
 		driver = DriverInitiate.InitiateDriver();
 		 binder.bind(WebDriver.class).toInstance(driver);
+	}
+		catch (MalformedURLException e){
+		     System.out.println("error " + e);
+		}
 	}
 	
 }
