@@ -16,7 +16,8 @@ import com.google.inject.AbstractModule;
 public class DriverInitiate extends AbstractModule{
 	
 	WebDriver driver;
-	String baseUrl, nodeURL, url;
+	String baseUrl, nodeURL;
+	public static String url;
 
   // private static DriverInitiate driverInstance = new DriverInitiate( );
 
@@ -61,7 +62,7 @@ public class DriverInitiate extends AbstractModule{
 	  } */
 	
 	
-	 @Override
+	 
 	public  static WebDriver InitiateDriver() throws MalformedURLException { 
 	        DesiredCapabilities capability =  DesiredCapabilities.chrome();
 	     
@@ -79,6 +80,7 @@ public class DriverInitiate extends AbstractModule{
 		
 	 }
 	
+	@Override
 	public  void configure(Binder binder) { 
 		
 	     binder.bind(WebDriver.class).toInstance(driver);
