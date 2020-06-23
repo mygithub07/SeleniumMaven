@@ -74,6 +74,7 @@ public class DriverInitiate implements Module{
 	   final ChromeOptions chromeOptions = new ChromeOptions();
            chromeOptions.setBinary("/usr/bin/google-chrome-stable");
            chromeOptions.addArguments("--headless");
+	   chromeOptions.addArguments("--no-sandbox");
            desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
            WebDriver d = new RemoteWebDriver(new URL(url), desiredCapabilities);
 		return d;
