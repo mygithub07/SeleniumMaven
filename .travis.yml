@@ -1,6 +1,6 @@
 sudo: required
 language: java
-dist: trusty
+dist: xenial
 addons:
   chrome: stable # have Travis install Chrome stable.
 install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
