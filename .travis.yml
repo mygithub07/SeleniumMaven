@@ -3,16 +3,22 @@ language: java
 dist: xenial
 addons:
   chrome: stable
-before_install:
+  apt:
+    packages:
+      - chromium-chromedriver
+#before_install:
+before_script:
+ # include ChromeDriver in PATH
+  - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
   - # start your web application and listen on `localhost`
   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
-install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
-  - wget -N http://chromedriver.storage.googleapis.com/84.0.4147.30/chromedriver_linux64.zip -P ~/
-  - unzip ~/chromedriver_linux64.zip -d ~/
-  - rm ~/chromedriver_linux64.zip
-  - sudo mv -f ~/chromedriver /usr/local/share/
-  - sudo chmod +x /usr/local/share/chromedriver
-  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+#install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
+#  - wget -N http://chromedriver.storage.googleapis.com/84.0.4147.30/chromedriver_linux64.zip -P ~/
+ # - unzip ~/chromedriver_linux64.zip -d ~/
+#  - rm ~/chromedriver_linux64.zip
+#  - sudo mv -f ~/chromedriver /usr/local/share/
+#  - sudo chmod +x /usr/local/share/chromedriver
+#  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 #cache:
  # yarn: true
  # directories:
