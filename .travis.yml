@@ -22,8 +22,8 @@ install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
 #script:
 #  - yarn test
 before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
   - npm i -g npm@^3
   - sleep 3
 script: 
