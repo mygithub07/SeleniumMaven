@@ -68,7 +68,7 @@ public class DriverInitiate implements Module{
 	     
 	      capability.setBrowserName("chrome");
 	      capability.setPlatform(Platform.LINUX);
-	     // capability.setVersion("");
+	     // capability.setVersion("latest");
 		 url= "https://www.bing.com/";
 	   DesiredCapabilities desiredCapabilities =  DesiredCapabilities.chrome();
 	   final ChromeOptions chromeOptions = new ChromeOptions();
