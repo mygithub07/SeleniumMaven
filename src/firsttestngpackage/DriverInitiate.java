@@ -69,7 +69,7 @@ public class DriverInitiate implements Module{
 	      capability.setBrowserName("chrome");
 	      capability.setPlatform(Platform.LINUX);
 	      capability.setVersion("");
-		 url= "http://google.com";
+		 url= "https://www.bing.com/";
 	   DesiredCapabilities desiredCapabilities =  DesiredCapabilities.chrome();
 	   final ChromeOptions chromeOptions = new ChromeOptions();
            chromeOptions.setBinary("/usr/bin/google-chrome-stable");
