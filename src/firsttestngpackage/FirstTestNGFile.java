@@ -18,9 +18,13 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.log4testng.Logger;
 //import firsttestngpackage.CustomReport;;
 
-
+@Guice(modules = {DriverInitiate.class})
 public class FirstTestNGFile {
 	
+	@Inject
+      WebDriver driver;
+	
+	/*
 	 private static final Logger LOGGER = Logger.getLogger(FirstTestNGFile.class);
 	WebDriver driver;
 	String baseUrl, nodeURL;
@@ -45,8 +49,9 @@ public class FirstTestNGFile {
 
   }
   
- 
+ */
 
+	/*
   //@Test (priority=1)
   @Test(groups={"sanity"})
   public void gotoURL() throws InterruptedException{
@@ -55,8 +60,8 @@ public class FirstTestNGFile {
 	  System.out.println("went to URL");
   }
   
-
-  
+*/
+  /*
   //@Test (priority=2)
   @Test(groups={"sanity"})
   public void SignIn() throws InterruptedException{
@@ -94,7 +99,13 @@ public class FirstTestNGFile {
 	  
   }
   
-  
+  */
+    @Test(groups={"smoke"})
+	public void FirstTestNGFileTest(){
+	    //System.out.println("PreloginPageTest");
+	    System.out.println("driver from FirstTestNGFileTest method " + driver);
+	} 
+	  
    @Test(groups={"sanity"})
   public void Suite2Test1() throws InterruptedException{
 	 // LOGGER.debug("entering gotoURL()");
