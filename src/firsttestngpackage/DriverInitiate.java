@@ -12,7 +12,7 @@ import com.google.inject.Module;
 import org.testng.annotations.Guice;
 import com.google.inject.Inject;
 import com.google.inject.AbstractModule;
-org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverInitiate implements Module{
 	
