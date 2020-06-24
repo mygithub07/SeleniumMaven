@@ -20,6 +20,12 @@ public class PageObjectOne {
 	// static WebDriver WDriver;
 	@Inject
       WebDriver driver;
+	
+	
+	@Test(groups={"smoke"})
+	public void pageObjOneTestDriver(){
+	    System.out.println("driver from pageObjOneTestDriver method " + driver);
+	}
 	//public  static WebDriver driver;
        /*
 	  public  void  configure(Binder binder){
@@ -44,11 +50,7 @@ public class PageObjectOne {
 	*/
 	
 	
-	@Test(groups={"smoke"})
-	public void pageObjOneTest(){
-	    //System.out.println("PreloginPageTest");
-	    System.out.println("driver from pageObjOneTest method " + driver);
-	}
+	
 	/*
 	public static void goTo() throws InterruptedException{
 		 System.out.println("DRIVER from PageObjectOne class " + driver); 
