@@ -66,13 +66,13 @@ public class DriverInitiate implements Module{
 	public  static WebDriver InitiateDriver() throws MalformedURLException { 
 	        DesiredCapabilities capability =  DesiredCapabilities.chrome();
 	     
-	      capability.setBrowserName("chrome");
-	      capability.setPlatform(Platform.LINUX);
-	      capability.setVersion("latest");
+	     // capability.setBrowserName("chrome");
+	    //  capability.setPlatform(Platform.LINUX);
+	    //  capability.setVersion("latest");
 		 url= "https://www.google.com";
 	   DesiredCapabilities desiredCapabilities =  DesiredCapabilities.chrome();
 	   final ChromeOptions chromeOptions = new ChromeOptions();
-           chromeOptions.setBinary("/usr/bin/google-chrome-stable");
+           //chromeOptions.setBinary("/usr/bin/google-chrome-stable");
            chromeOptions.addArguments("--headless");  
 	   chromeOptions.addArguments("--no-sandbox");
 	   chromeOptions.merge(desiredCapabilities);
