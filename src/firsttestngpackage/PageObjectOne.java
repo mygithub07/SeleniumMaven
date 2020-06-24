@@ -19,7 +19,7 @@ public class PageObjectOne {
 	
 	// static WebDriver WDriver;
 	@Inject
-      public static WebDriver driver;
+      WebDriver driver;
 	//public  static WebDriver driver;
        /*
 	  public  void  configure(Binder binder){
@@ -44,8 +44,14 @@ public class PageObjectOne {
 	*/
 	
 	
+	@Test(groups={"smoke"})
+	public void pageObjOneTest(){
+	    //System.out.println("PreloginPageTest");
+	    System.out.println("driver from pageObjOneTest method " + driver);
+	}
+	/*
 	public static void goTo() throws InterruptedException{
-		 System.out.println("DRIVER :  " + driver); 
+		 System.out.println("DRIVER from PageObjectOne class " + driver); 
 		 driver.get(SelectorRepo.url);
 		 Thread.sleep(3000);
 		
@@ -67,5 +73,6 @@ public class PageObjectOne {
 		  return SignInFunction;
 		 
 	  }
+	  */
 	  
 }
