@@ -65,11 +65,12 @@ public class LoginPageTest {
 	    
     }
 	
-	
+	/*
 	  @Test(groups={"smoke"})
 	 public void signin(){
 		 webelementlist = new ArrayList<WebElement>();
 		webelementlist=PageObjectOne.SignIn();
 	 }
+	 */
 	 
 }
