@@ -77,7 +77,8 @@ public class DriverInitiate implements Module{
 	   chromeOptions.addArguments("--no-sandbox");
 	   chromeOptions.merge(desiredCapabilities);
           // desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-           WebDriver d = new RemoteWebDriver(new URL(url), desiredCapabilities);
+        //   WebDriver d = new RemoteWebDriver(new URL(url), desiredCapabilities);
+	   WebDriver driver = new ChromeDriver(chromeOptions)
 		System.out.println("******DRIVER*****" + d);
 		return d;
 		
