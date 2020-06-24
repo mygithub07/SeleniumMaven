@@ -73,7 +73,7 @@ public class DriverInitiate implements Module{
 	   DesiredCapabilities desiredCapabilities =  DesiredCapabilities.chrome();
 	   final ChromeOptions chromeOptions = new ChromeOptions();
            //chromeOptions.setBinary("/usr/bin/google-chrome-stable");
-           chromeOptions.addArguments("--headless");  
+           //chromeOptions.addArguments("--headless");  
 	   chromeOptions.addArguments("--no-sandbox");
 	   chromeOptions.merge(desiredCapabilities);
           // desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
