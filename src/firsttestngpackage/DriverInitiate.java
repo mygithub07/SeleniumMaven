@@ -12,6 +12,7 @@ import com.google.inject.Module;
 import org.testng.annotations.Guice;
 import com.google.inject.Inject;
 import com.google.inject.AbstractModule;
+org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverInitiate implements Module{
 	
@@ -78,7 +79,7 @@ public class DriverInitiate implements Module{
 	   chromeOptions.merge(desiredCapabilities);
           // desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
         //   WebDriver d = new RemoteWebDriver(new URL(url), desiredCapabilities);
-	   WebDriver driver = new ChromeDriver(chromeOptions);
+	   WebDriver d = new ChromeDriver(chromeOptions);
 		System.out.println("******DRIVER*****" + d);
 		return d;
 		
