@@ -13,7 +13,8 @@ before_script:
  # include ChromeDriver in PATH
   - LATEST_CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE"`
   - curl "https://chromedriver.storage.googleapis.com/${LATEST_CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O
-  - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
+  - unzip chromedriver_linux64.zip -d ~/bin
+ # - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
  # - # start your web application and listen on `localhost`
   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 #install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
