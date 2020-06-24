@@ -12,9 +12,9 @@ public class PreloginPageTest {
       WebDriver driver;
 	
 	@Test(groups={"smoke"})
-	public void preloginPageTest(){
+	public void preloginPageTestDriver(){
 	    //System.out.println("PreloginPageTest");
-	    System.out.println("driver from preloginPageTest method " + driver);
+	    System.out.println("driver from preloginPageTestDriver method " + driver);
 	}
 	@Test(groups={"sanity","regression"})
 	public void validateLogo(){
