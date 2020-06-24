@@ -24,6 +24,12 @@ public class LoginPageTest {
 	      return driver;
          } */
 	 
+
+        @Test(groups={"smoke"})
+	 public void LoginPageTestDriver()throws InterruptedException{
+		//PageObjectOne.goTo(); 
+		System.out.println("driver from LoginPageTestDriver method " + driver);
+	 }	
 	
 	@Test(groups={"sanity"})
     public void validLoginTest(){
@@ -59,12 +65,6 @@ public class LoginPageTest {
 	    
     }
 	
-      @Test(groups={"smoke"})
-	 public void gotourl()throws InterruptedException{
-		//PageObjectOne.goTo();
-		 
-		System.out.println("driver from gotourl method " + driver);
-	 }
 	
 	  @Test(groups={"smoke"})
 	 public void signin(){
