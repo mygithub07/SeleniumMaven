@@ -24,6 +24,20 @@ public class FirstTestNGFile {
 	@Inject
       WebDriver driver;
 	
+	
+	
+	 @Test(groups={"smoke"})
+	public void FirstTestNGFileTest(){
+	    System.out.println("driver from FirstTestNGFileTest method " + driver);
+	} 
+	
+	 @Test(groups={"sanity"})
+        public void Suite2Test1() throws InterruptedException{
+	 // LOGGER.debug("entering gotoURL()");
+	 // pageObjOne.goTo();
+	  System.out.println("test1 in suite2");
+  }
+	
 	/*
 	 private static final Logger LOGGER = Logger.getLogger(FirstTestNGFile.class);
 	WebDriver driver;
@@ -100,18 +114,9 @@ public class FirstTestNGFile {
   }
   
   */
-    @Test(groups={"smoke"})
-	public void FirstTestNGFileTest(){
-	    //System.out.println("PreloginPageTest");
-	    System.out.println("driver from FirstTestNGFileTest method " + driver);
-	} 
+   
 	  
-   @Test(groups={"sanity"})
-  public void Suite2Test1() throws InterruptedException{
-	 // LOGGER.debug("entering gotoURL()");
-	 // pageObjOne.goTo();
-	  System.out.println("test1 in suite2");
-  }
+  
  
 
 }
