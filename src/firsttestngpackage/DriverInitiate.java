@@ -13,6 +13,7 @@ import org.testng.annotations.Guice;
 import com.google.inject.Inject;
 import com.google.inject.AbstractModule;
 import org.openqa.selenium.chrome.ChromeDriver;
+import com.google.inject.Singleton;
 
 public class DriverInitiate implements Module{
 	
