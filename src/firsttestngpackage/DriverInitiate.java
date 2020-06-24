@@ -90,7 +90,7 @@ public class DriverInitiate implements Module{
 		    
 	try{
 		driver = DriverInitiate.InitiateDriver();
-		 binder.bind(WebDriver.class).toInstance(driver);
+		 binder.bind(WebDriver.class).toInstance(driver).in(Singleton.class);
 	}
 		catch (MalformedURLException e){
 		     System.out.println("error " + e);
