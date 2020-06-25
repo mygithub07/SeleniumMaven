@@ -10,7 +10,7 @@ import com.google.inject.Inject;
 import com.google.inject.Injector;
 import com.google.inject.Singleton;
 import org.openqa.selenium.WebDriver;
-
+/*
  public class injector {
 	 
 	 public static Injector injector;
@@ -25,7 +25,7 @@ import org.openqa.selenium.WebDriver;
           return injector;
    }
  }
-
+*/
 interface initiateDriver {
    public WebDriver getDriver();
 }
