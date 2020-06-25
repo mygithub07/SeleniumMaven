@@ -11,7 +11,7 @@ import com.google.inject.Injector;
 import com.google.inject.Singleton;
 import org.openqa.selenium.WebDriver;
 
- public class injector {
+ public class Inj {
 	 
 	 public static Injector injector;
 	 
