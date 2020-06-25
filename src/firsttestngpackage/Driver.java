@@ -19,7 +19,7 @@ import org.openqa.selenium.WebDriver;
         injector.injectMembers(initD);
 	}
 	 
-	  public Injector getInjector() { 
+	  public static Injector getInjector() { 
           return injector;
    }
  }
