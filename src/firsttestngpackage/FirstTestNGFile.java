@@ -18,13 +18,16 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.log4testng.Logger;
 import org.testng.annotations.Guice;
 import com.google.inject.Inject;
+import firsttestngpackage.Driver;
+
 //import firsttestngpackage.CustomReport;;
 
-@Guice(modules = {DriverInitiate.class})
+//@Guice(modules = {DriverInitiate.class})
+
 public class FirstTestNGFile {
 	
-	@Inject
-      WebDriver driver;
+	//@Inject
+     // WebDriver driver;
 	
 	
 	
