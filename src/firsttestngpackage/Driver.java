@@ -8,22 +8,22 @@ import org.openqa.selenium.WebDriver;
 
 //Binding Module
 class BindDriver extends AbstractModule {
-   @Override
    
+   @Override
    protected void configure() {   
       bind(initiateDriver.class).to(initiateDriverImpl.class);
    } 
 }
 
 interface initiateDriver {
-   public double getDriver();
+   public WebDriver getDriver();
 }
 
 @Singleton
 class initiateDriverImpl implements initiateDriver {
    WebDriver d; 
    
-   public initiateDriver() {
+   public initiateDriverImpl() {
         DesiredCapabilities capability =  DesiredCapabilities.chrome();
 	      capability.setBrowserName("chrome");
 	      capability.setPlatform(Platform.LINUX);
