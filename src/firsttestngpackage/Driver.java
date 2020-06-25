@@ -11,7 +11,18 @@ import com.google.inject.Injector;
 import com.google.inject.Singleton;
 import org.openqa.selenium.WebDriver;
 
-
+ public class injector {
+	 
+	public injector(){
+	Injector injector = Guice.createInjector(new useDriverModule());
+        initiateDriver initD = new initiateDriverImpl();
+        injector.injectMembers(initD);
+	}
+	 
+	  public Injector getInjector() { 
+          return injector;
+   }
+ }
 
 interface initiateDriver {
    public WebDriver getDriver();
@@ -43,7 +54,7 @@ class initiateDriverImpl implements initiateDriver {
 }
 
 //Binding Module
-class BindDriver extends AbstractModule {
+class useDriverModule extends AbstractModule {
    
    @Override
    protected void configure() {   
@@ -51,14 +62,14 @@ class BindDriver extends AbstractModule {
    } 
 }
 
-class driverUsage {
+class useDriver {
    private initiateDriver initDriver;
 
    @Inject
    public void setDriver(initiateDriver initDriver) {
       this.initDriver = initDriver;
    }
-   public driverUsage() { }
+   public useDriver() { }
 
    public WebDriver getTheDriver() {
       return initDriver.getDriver();
