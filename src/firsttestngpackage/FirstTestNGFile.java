@@ -31,7 +31,7 @@ public class FirstTestNGFile {
 	//@Inject
      // WebDriver driver;
 	
-	public static Injector inj = Driver.injector;
+	public static Injector inj = Inj.injector;
 	
 	public useDriver usedriver = inj.getInstance(useDriver.class);
 	
