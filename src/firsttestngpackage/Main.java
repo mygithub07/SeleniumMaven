@@ -1,4 +1,4 @@
-import firsttestngpackage.Driver;
+import firsttestngpackage.injector;
 
 public class Main {
   
