@@ -30,10 +30,10 @@ public class FirstTestNGFile {
 	
 	//@Inject
      // WebDriver driver;
-	public static useDriver usedriver;
+	
 	public static Injector inj = Driver.injector;
 	
-	usedriver = inj.getInstance(useDriver.class);
+	public useDriver usedriver = inj.getInstance(useDriver.class);
 	
 	 @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
