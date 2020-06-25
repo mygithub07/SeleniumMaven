@@ -18,7 +18,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.log4testng.Logger;
 import org.testng.annotations.Guice;
 import com.google.inject.Inject;
+import com.google.inject.Injector;
 import firsttestngpackage.Driver;
+
 
 //import firsttestngpackage.CustomReport;;
 
@@ -28,12 +30,14 @@ public class FirstTestNGFile {
 	
 	//@Inject
      // WebDriver driver;
+	public static useDriver usedriver;
+	public static Injector inj = Driver.injector;
 	
-	
+	usedriver = inj.getInstance(useDriver.class);
 	
 	 @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
-	    System.out.println("driver from FirstTestNGFileTest method " + driver);
+	    System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
 	} 
 	
 	 @Test(groups={"sanity"})
