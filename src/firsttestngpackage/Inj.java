@@ -15,10 +15,11 @@ import org.openqa.selenium.WebDriver;
 	 
 	 public static Injector injector;
 	 
-	public injector(){
+	public Injector injector(){
         injector = Guice.createInjector(new useDriverModule());
         initiateDriver initD = new initiateDriverImpl();
         injector.injectMembers(initD);
+		return injector;
 	}
 	 
 	  public static Injector getInjector() { 
