@@ -1,3 +1,4 @@
+/*
 package firsttestngpackage;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -20,6 +21,8 @@ public class DriverInitiate implements Module{
 	WebDriver driver;
 	String baseUrl, nodeURL;
 	public static String url;
+	
+*/	
 
   // private static DriverInitiate driverInstance = new DriverInitiate( );
 
@@ -63,7 +66,7 @@ public class DriverInitiate implements Module{
 	      
 	  } */
 	
-	
+/*
 	 
 	public  static WebDriver InitiateDriver() throws MalformedURLException { 
 	        DesiredCapabilities capability =  DesiredCapabilities.chrome();
@@ -99,3 +102,5 @@ public class DriverInitiate implements Module{
 	}
 	
 }
+
+*/
