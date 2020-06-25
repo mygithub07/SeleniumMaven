@@ -1,9 +1,9 @@
-import firsttestngpackage.injector;
+import firsttestngpackage.Inj;
 
 public class Main {
   
      public  static injector inject;
      public static void main(String[] args) {}
       
-         injector inject = new injector();
+          inject = new injector();
    }
