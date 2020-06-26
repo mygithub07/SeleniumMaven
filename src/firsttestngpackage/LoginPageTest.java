@@ -11,11 +11,11 @@ import org.testng.annotations.Guice;
 import com.google.inject.Inject;
 
 
-@Guice(modules = {DriverInitiate.class})
+//@Guice(modules = {DriverInitiate.class})
 public class LoginPageTest {
 
-	@Inject
-      WebDriver driver;
+	//@Inject
+     // WebDriver driver;
 	public static List<WebElement> webelementlist;
 	//public  static  firsttestngpackage.PageObjectOne pgo1;	
 	/*
