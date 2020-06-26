@@ -5,11 +5,11 @@ import org.testng.annotations.Guice;
 import com.google.inject.Inject;
 import org.openqa.selenium.WebDriver;
 
-@Guice(modules = {DriverInitiate.class})
+//@Guice(modules = {DriverInitiate.class})
 public class PreloginPageTest {
 	
-	@Inject
-      WebDriver driver;
+	//@Inject
+     // WebDriver driver;
 	
 	@Test(groups={"smoke"})
 	public void preloginPageTestDriver(){
