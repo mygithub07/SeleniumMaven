@@ -14,7 +14,7 @@ import com.google.inject.Module;
 import org.testng.annotations.Guice;
 import com.google.inject.Inject;
 
-@Guice(modules = {DriverInitiate.class})
+//@Guice(modules = {DriverInitiate.class})
 public class PageObjectOne {
 	
 	// static WebDriver WDriver;
