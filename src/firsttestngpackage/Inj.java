@@ -16,6 +16,7 @@ import org.openqa.selenium.WebDriver;
  public class Inj {
 	 
 	 public static Injector injector;
+	 public static String url;
 	 
 	public Injector injector(){
         injector = Guice.createInjector(new useDriverModule());
