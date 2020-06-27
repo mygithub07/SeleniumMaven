@@ -25,7 +25,7 @@ public class PageObjectOne {
 	@Test(groups={"smoke"})
 	public void pageObjOneTestDriver(){
 		 System.out.println("***pageObjOneTestDriver***");
-	}
+	
 	  //  System.out.println("driver from pageObjOneTestDriver method " + driver);
 	}
 	//public  static WebDriver driver;
