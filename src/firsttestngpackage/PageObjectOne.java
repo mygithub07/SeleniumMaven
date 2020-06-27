@@ -6,7 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import firsttestngpackage.DriverInitiate;
+//import firsttestngpackage.DriverInitiate;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import com.google.inject.Binder;
@@ -24,7 +24,9 @@ public class PageObjectOne {
 	
 	@Test(groups={"smoke"})
 	public void pageObjOneTestDriver(){
-	    System.out.println("driver from pageObjOneTestDriver method " + driver);
+		 System.out.println("***pageObjOneTestDriver***");
+	}
+	  //  System.out.println("driver from pageObjOneTestDriver method " + driver);
 	}
 	//public  static WebDriver driver;
        /*
