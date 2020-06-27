@@ -44,5 +44,5 @@ before_script:
 #  - whereis google-chrome-stable
 #  - whereis chromedriver
 
-script: mvn clean test -P main-suite -e
+script: mvn clean test -P main-suite -e -X
 
