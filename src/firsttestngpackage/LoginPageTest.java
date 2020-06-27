@@ -28,7 +28,8 @@ public class LoginPageTest {
         @Test(groups={"smoke"})
 	 public void LoginPageTestDriver()throws InterruptedException{
 		//PageObjectOne.goTo(); 
-		System.out.println("driver from LoginPageTestDriver method " + driver);
+		
+		//System.out.println("driver from LoginPageTestDriver method " + driver);
 	 }	
 	
 	@Test(groups={"sanity"})
