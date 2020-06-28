@@ -1,4 +1,5 @@
 
+/*
 package firsttestngpackage;
 
 import org.openqa.selenium.*;
@@ -39,7 +40,7 @@ public class FirstTestNGFile {
     // pageObjOne.goTo();	 System.out.println("test1 in suite2");
   }
   
-  /*
+  
   private static final Logger LOGGER = Logger.getLogger(FirstTestNGFile.class);	
   WebDriver driver;
   String baseUrl, nodeURL;	
@@ -58,7 +59,7 @@ public class FirstTestNGFile {
   
   } 
   
-  */	
+  
   /* 
   //@Test (priority=1)
   @Test(groups={"sanity"}) 
@@ -102,4 +103,4 @@ public class FirstTestNGFile {
   
   */
   
-  } 
+ // } 
