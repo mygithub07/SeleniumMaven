@@ -1,5 +1,5 @@
 
-/*
+
 package firsttestngpackage;
 
 import org.openqa.selenium.*;
@@ -49,7 +49,7 @@ public class FirstTestNGFile {
 	  System.out.println("test1 in suite2");
   }
 	
- */
+ 
 /*	
 	
 	 private static final Logger LOGGER = Logger.getLogger(FirstTestNGFile.class);
@@ -129,6 +129,6 @@ public class FirstTestNGFile {
   */
   
 
-//} 
+} 
 
 
