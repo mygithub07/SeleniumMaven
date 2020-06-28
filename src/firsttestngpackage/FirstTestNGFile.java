@@ -1,3 +1,4 @@
+
 /*
 package firsttestngpackage;
 
@@ -48,7 +49,9 @@ public class FirstTestNGFile {
 	  System.out.println("test1 in suite2");
   }
 	
-	/*
+ */
+/*	
+	
 	 private static final Logger LOGGER = Logger.getLogger(FirstTestNGFile.class);
 	WebDriver driver;
 	String baseUrl, nodeURL;
@@ -124,11 +127,8 @@ public class FirstTestNGFile {
   }
   
   */
-   
-	  
   
- 
 
-}
+//} 
 
-*/
+
