@@ -1,5 +1,5 @@
 
-/*
+
 package firsttestngpackage;
 
 import org.openqa.selenium.*;
@@ -28,6 +28,7 @@ public class FirstTestNGFile {
   public static Injector inj = Inj.injector;
   public useDriver usedriver = inj.getInstance(useDriver.class);	
   
+  
   @Test(groups={"smoke"})
   public void FirstTestNGFileTest(){	
     System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
@@ -47,10 +48,15 @@ public class FirstTestNGFile {
   
   PageObjectOne pageObjOne = new PageObjectOne();	 
   SelectorRepo selectors = new SelectorRepo();
-  
+ /* 
   @BeforeTest 
   public void setUp() throws MalformedURLException {	 
   driver=pageObjOne.driver;	 System.out.println(driver);
+  }  */
+  
+   @BeforeTest 
+  public void setUp()  {	 
+     Inj inject = new Inj();
   } 
   
   @AfterTest
