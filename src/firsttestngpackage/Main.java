@@ -1,3 +1,4 @@
+/*
 import firsttestngpackage.Inj;
 
 public class Main {
@@ -7,3 +8,5 @@ public class Main {
       
          Inj inject = new Inj();
    }
+   
+   */
