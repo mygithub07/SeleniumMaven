@@ -2,11 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="main-suite" thread-count="5" group-by-instances="false" verbose="1" allow-return-values="false" parallel="false" data-provider-thread-count="10" junit="false" configfailurepolicy="skip" preserve-order="true" skipfailedinvocationcounts="false">
 
-      
+<!--      
 <suite-files>
     <suite-file path="suite2.xml" />
    
  </suite-files>
+-->	
 	<!--
   	 <groups>
 		
