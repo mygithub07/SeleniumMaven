@@ -34,6 +34,7 @@ public class FirstTestNGFile {
     System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
   } 
   
+  /*
   @Test(groups={"sanity"}) 
   public void Suite2Test1() throws InterruptedException{	
     
@@ -48,7 +49,9 @@ public class FirstTestNGFile {
   
   PageObjectOne pageObjOne = new PageObjectOne();	 
   SelectorRepo selectors = new SelectorRepo();
- /* 
+  */
+  
+ /*
   @BeforeTest 
   public void setUp() throws MalformedURLException {	 
   driver=pageObjOne.driver;	 System.out.println(driver);
