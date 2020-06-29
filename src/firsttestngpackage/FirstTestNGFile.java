@@ -1,7 +1,4 @@
-
-
 package firsttestngpackage;
-
 import org.openqa.selenium.*;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
@@ -20,18 +17,18 @@ import com.google.inject.Injector;
 import firsttestngpackage.Inj;
 
 //import firsttestngpackage.CustomReport;
-//@Guice(modules = {DriverInitiate.class})
+@Guice(modules = {DriverInitiate.class})
 
 public class FirstTestNGFile {	
   
   //@Inject // WebDriver driver;
- public static Injector inj = Inj.injector;
- public useDriver usedriver = inj.getInstance(useDriver.class);	
+// public static Injector inj = Inj.injector;
+//public useDriver usedriver = inj.getInstance(useDriver.class);	
   
   
   @Test(groups={"smoke"})
   public void FirstTestNGFileTest(){	
-    System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
+    //System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
   } 
   
   /*
@@ -51,16 +48,17 @@ public class FirstTestNGFile {
   SelectorRepo selectors = new SelectorRepo();
   */
   
- /*
+ 
   @BeforeTest 
   public void setUp() throws MalformedURLException {	 
-  driver=pageObjOne.driver;	 System.out.println(driver);
-  }  */
-  
+  driver=pageObjOne.driver;	 
+    System.out.println(driver);
+  }  
+  /*
    @BeforeTest 
   public void setUp()  {	 
      Inj inject = new Inj();
-  } 
+  } */
   
   @AfterTest
   public void afterTest(){
