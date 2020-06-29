@@ -25,8 +25,8 @@ import firsttestngpackage.Inj;
 public class FirstTestNGFile {	
   
   //@Inject // WebDriver driver;
-//  public static Injector inj = Inj.injector;
- // public useDriver usedriver = inj.getInstance(useDriver.class);	
+ public static Injector inj = Inj.injector;
+ public useDriver usedriver = inj.getInstance(useDriver.class);	
   
   
   @Test(groups={"smoke"})
