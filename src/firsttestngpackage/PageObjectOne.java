@@ -15,22 +15,23 @@ import org.testng.annotations.Guice;
 import com.google.inject.Inject;
 import firsttestngpackage.Inj;
 
-//@Guice(modules = {DriverInitiate.class})
+@Guice(modules = {DriverInitiate.class})
 public class PageObjectOne {
 	
-	// static WebDriver WDriver;
-//	@Inject
-  //    WebDriver driver;
-	public static Injector inj = Inj.injector;
+	static WebDriver WDriver;
+	@Inject
+        WebDriver driver;
 	
-	public useDriver usedriver = inj.getInstance(useDriver.class);
+	//public static Injector inj = Inj.injector;
+	
+	//public useDriver usedriver = inj.getInstance(useDriver.class);
 	
 	@Test(groups={"smoke"})
 	public void pageObjOneTestDriver(){
 		 System.out.println("***pageObjOneTestDriver***");
-		 System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
+		// System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
 	
-	  //  System.out.println("driver from pageObjOneTestDriver method " + driver);
+	    System.out.println("driver from pageObjOneTestDriver method " + driver);
 	}
 	//public  static WebDriver driver;
        /*
