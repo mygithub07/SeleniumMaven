@@ -25,12 +25,11 @@ public class FirstTestNGFile {
 // public static Injector inj = Inj.injector;
 //public useDriver usedriver = inj.getInstance(useDriver.class);	
   
-  
-  @Test(groups={"smoke"})
-  public void FirstTestNGFileTest(){	
-    //System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
-  } 
-  
+   @Test(groups={"smoke"})
+	public void FirstTestNGFileTest(){
+	    System.out.println("driver from FirstTestNGFileTest method " + driver);
+      //System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
+	} 
   /*
   @Test(groups={"sanity"}) 
   public void Suite2Test1() throws InterruptedException{	
@@ -48,23 +47,23 @@ public class FirstTestNGFile {
   SelectorRepo selectors = new SelectorRepo();
   */
   
- 
+ /*
   @BeforeTest 
   public void setUp() throws MalformedURLException {	 
   driver=pageObjOne.driver;	 
     System.out.println(driver);
-  }  
+  }  */
   /*
    @BeforeTest 
   public void setUp()  {	 
      Inj inject = new Inj();
   } */
-  
+  /*
   @AfterTest
   public void afterTest(){
   driver.quit();
   
-  } 
+  } */
   
   
   /* 
