@@ -1,4 +1,4 @@
-/*
+
 package firsttestngpackage;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -22,27 +22,27 @@ public class DriverInitiate implements Module{
 	String baseUrl, nodeURL;
 	public static String url;
 	
-*/	
+	
 
-  // private static DriverInitiate driverInstance = new DriverInitiate( );
+   private static DriverInitiate driverInstance = new DriverInitiate( );
 
    /* A private Constructor prevents any other
     * class from instantiating.
     */
- //  private DriverInitiate() { }
+   private DriverInitiate() { }
 
    /* Static 'instance' method */
-	/*
+	
    public static DriverInitiate getInstance( ) {
       return driverInstance;
    }
-*/
+
 	
    /* Other methods protected by singleton-ness */
-/*	
-   public  WebDriver InitiateDriver() throws MalformedURLException { */
 	
-	   /*  baseUrl= "http://newtours.demoaut.com/" ;
+   public  WebDriver InitiateDriver() throws MalformedURLException { 
+	
+	     baseUrl= "http://newtours.demoaut.com/" ;
 	      nodeURL= "http://localhost:4444/wd/hub" ;
 	      
 	      DesiredCapabilities capability =  DesiredCapabilities.chrome();
@@ -52,8 +52,8 @@ public class DriverInitiate implements Module{
 	      capability.setVersion("");
 	    //  WebDriver = new RemoteWebDriver (new URL(nodeURL), capability);
 	     WebDriver = new RemoteWebDriver (capability);
-	     */
-	   /*
+	     
+	   
 	   url= "http://hp.com";
 	   DesiredCapabilities desiredCapabilities =  DesiredCapabilities.chrome();
 	   final ChromeOptions chromeOptions = new ChromeOptions();
@@ -64,10 +64,9 @@ public class DriverInitiate implements Module{
 	   //WebDriver driver = new RemoteWebDriver(desiredCapabilities);
 	      return driver;
 	      
-	  } */
+	  } 
 	
 /*
-	 
 	public  static WebDriver InitiateDriver() throws MalformedURLException { 
 	        DesiredCapabilities capability =  DesiredCapabilities.chrome();
 	     
@@ -100,7 +99,7 @@ public class DriverInitiate implements Module{
 		     System.out.println("error " + e);
 		}
 	}
-	
+	*/
 }
 
-*/
+
