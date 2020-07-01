@@ -1,10 +1,10 @@
-/*
+
 package firsttestngpackage;
 
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
-import firsttestngpackage.PageObjectOne;
+//import firsttestngpackage.PageObjectOne;
 import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class LoginPageTest {
 	      return driver;
          } */
 	 
-/*
+
         @Test(groups={"smoke"})
 	 public void LoginPageTestDriver()throws InterruptedException{
 		//PageObjectOne.goTo(); 
@@ -75,4 +75,4 @@ public class LoginPageTest {
 	 }
 	 */
 	 
-//} 
+} 
