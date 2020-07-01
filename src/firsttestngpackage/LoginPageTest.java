@@ -1,3 +1,4 @@
+/*
 package firsttestngpackage;
 
 import org.testng.annotations.Test;
@@ -24,7 +25,7 @@ public class LoginPageTest {
 	      return driver;
          } */
 	 
-
+/*
         @Test(groups={"smoke"})
 	 public void LoginPageTestDriver()throws InterruptedException{
 		//PageObjectOne.goTo(); 
@@ -74,4 +75,4 @@ public class LoginPageTest {
 	 }
 	 */
 	 
-}
+//} 
