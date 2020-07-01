@@ -27,8 +27,8 @@ public useDriver usedriver = inj.getInstance(useDriver.class);
   
    @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
-	    System.out.println("driver from FirstTestNGFileTest method " + driver);
-      //System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
+	  //  System.out.println("driver from FirstTestNGFileTest method " + driver);
+      System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
 	} 
   /*
   @Test(groups={"sanity"}) 
