@@ -28,6 +28,7 @@ public useDriver usedriver;
 public void FirstTestNGFile(){
  inj = Inj.injector;
   usedriver = inj.getInstance(useDriver.class);	
+	return usedriver;
 }
    @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
