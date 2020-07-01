@@ -1,4 +1,4 @@
-/*
+
 package firsttestngpackage;
 
 import org.testng.annotations.Test;
@@ -34,4 +34,4 @@ public class PreloginPageTest {
 	    System.out.println("Header Footer Present");
 	}
 
-} */
+} 
