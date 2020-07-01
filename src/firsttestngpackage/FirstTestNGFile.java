@@ -22,9 +22,11 @@ import firsttestngpackage.Inj;
 public class FirstTestNGFile {	
   
  // @Inject  WebDriver driver;
+	
+public void FirstTestNGFile(){
  public static Injector inj = Inj.injector;
  public useDriver usedriver = inj.getInstance(useDriver.class);	
-  
+}
    @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
     //    System.out.println("driver from FirstTestNGFileTest method " + driver);
