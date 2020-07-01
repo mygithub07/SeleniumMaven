@@ -49,7 +49,7 @@ class initiateDriverImpl implements initiateDriver {
 	chromeOptions.addArguments("--no-sandbox");
 	chromeOptions.merge(desiredCapabilities);
 	d = new ChromeDriver(chromeOptions);
-	System.out.println("******DRIVER*****" + d);
+	System.out.println("******DRIVER***** from Inj" + d);
    }
    
    @Override
