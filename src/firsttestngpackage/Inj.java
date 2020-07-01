@@ -24,10 +24,10 @@ import org.openqa.selenium.WebDriver;
         injector.injectMembers(initD);
 		return injector;
 	}
-	 
+	/* 
 	  public static Injector getInjector() { 
           return injector;
-   }
+   }*/
  }
 
 interface initiateDriver {
