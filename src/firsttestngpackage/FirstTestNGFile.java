@@ -8,7 +8,7 @@ import org.testng.annotations.*;
 import java.util.List;
 import firsttestngpackage.SelectorRepo;
 import org.openqa.selenium.WebElement;
-import firsttestngpackage.PageObjectOne;
+//import firsttestngpackage.PageObjectOne;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.log4testng.Logger;
 import org.testng.annotations.Guice;
