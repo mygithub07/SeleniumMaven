@@ -29,15 +29,15 @@ public class DriverInitiate implements Module{
    /* A private Constructor prevents any other
     * class from instantiating.
     */
-   private DriverInitiate() { }
+  // private DriverInitiate() { }
 
    /* Static 'instance' method */
-	
+/*	
    public static DriverInitiate getInstance( ) {
       return driverInstance;
    }
 
-	
+*/
    /* Other methods protected by singleton-ness */
 	/*
    public  WebDriver InitiateDriver() throws MalformedURLException { 
