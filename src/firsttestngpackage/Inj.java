@@ -1,4 +1,4 @@
-
+/*
 package firsttestngpackage;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -80,5 +80,7 @@ class useDriver {
    public WebDriver getTheDriver() {
       return initDriver.getDriver();
    }
-}
+} 
+
+*/
 
