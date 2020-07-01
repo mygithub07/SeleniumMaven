@@ -1,4 +1,4 @@
-/*
+
 package firsttestngpackage;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -25,7 +25,7 @@ public class DriverInitiate implements Module{
 	
 
    private static DriverInitiate driverInstance = new DriverInitiate( );
-*/
+
 	
    /* A private Constructor prevents any other
     * class from instantiating.
@@ -68,7 +68,7 @@ public class DriverInitiate implements Module{
 	  } 
 	*/
 	
-/*
+
 	public  static WebDriver InitiateDriver() throws MalformedURLException { 
 	        DesiredCapabilities capability =  DesiredCapabilities.chrome();
 	     
@@ -103,6 +103,6 @@ public class DriverInitiate implements Module{
 		}
 	}
 	
-} */
+} 
 
 
