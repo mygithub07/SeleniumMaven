@@ -13,8 +13,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.log4testng.Logger;
 import org.testng.annotations.Guice;
 import com.google.inject.Inject;
-//import com.google.inject.Injector;
-//import firsttestngpackage.Inj;
+import com.google.inject.Injector;
+import firsttestngpackage.Inj;
 
 //import firsttestngpackage.CustomReport;
 @Guice(modules = {DriverInitiate.class})
