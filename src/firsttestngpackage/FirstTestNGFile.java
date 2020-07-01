@@ -21,9 +21,9 @@ import com.google.inject.Inject;
 
 public class FirstTestNGFile {	
   
-  //@Inject // WebDriver driver;
-// public static Injector inj = Inj.injector;
-//public useDriver usedriver = inj.getInstance(useDriver.class);	
+  @Inject  WebDriver driver;
+ public static Injector inj = Inj.injector;
+public useDriver usedriver = inj.getInstance(useDriver.class);	
   
    @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
