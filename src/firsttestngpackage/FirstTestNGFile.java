@@ -24,11 +24,13 @@ public class FirstTestNGFile {
  // @Inject  WebDriver driver;
 public  Injector inj;
 public useDriver usedriver;
+public Inj i;
 	
 public useDriver FirstTestNGFile(){
- inj = Inj.injector;
+ i = new Inj();	
+ inj = i.injector;
   usedriver = inj.getInstance(useDriver.class);	
-	return usedriver;
+  return usedriver;
 }
    @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
