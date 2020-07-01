@@ -84,7 +84,7 @@ public class DriverInitiate implements Module{
           // desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
         //   WebDriver d = new RemoteWebDriver(new URL(url), desiredCapabilities);
 	   WebDriver d = new ChromeDriver(chromeOptions);
-		System.out.println("******DRIVER*****" + d);
+		System.out.println("******DRIVER-from DriverInitiate*****" + d);
 		return d;
 		
 	 }
