@@ -24,10 +24,10 @@ public class FirstTestNGFile {
  // @Inject  WebDriver driver;
 //public  Injector inj;
 public useDriver usedriver;
-public Inj i;
+//public Inj i;
 	
 public useDriver FirstTestNGFile(){
- i = new Inj();	
+Inj i = new Inj();	
 Injector inj = i.injector();
   usedriver = inj.getInstance(useDriver.class);	
 System.out.println("****usedriver value****"+ usedriver);
