@@ -22,13 +22,13 @@ import firsttestngpackage.Inj;
 public class FirstTestNGFile {	
   
  // @Inject  WebDriver driver;
-public  Injector inj;
+//public  Injector inj;
 public useDriver usedriver;
 public Inj i;
 	
 public useDriver FirstTestNGFile(){
  i = new Inj();	
- inj = i.injector();
+Injector inj = i.injector();
   usedriver = inj.getInstance(useDriver.class);	
 System.out.println("****usedriver value****"+ usedriver);
   return usedriver;
