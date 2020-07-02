@@ -36,7 +36,7 @@ System.out.println("****usedriver value****"+ usedriver);
    @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
     //    System.out.println("driver from FirstTestNGFileTest method " + driver);
-	System.out.println("****usedriver value**** " + usedriver);
+	System.out.println("****usedriver value in FirstTestNGFileTest**** " + usedriver);
        System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
 	} 
   /*
