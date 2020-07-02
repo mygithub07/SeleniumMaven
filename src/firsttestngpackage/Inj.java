@@ -63,6 +63,7 @@ class initiateDriverImpl implements initiateDriver {
 }
 */
 
+/*
 //Binding Module
 class useDriverModule extends AbstractModule {
    
@@ -71,7 +72,9 @@ class useDriverModule extends AbstractModule {
       bind(initiateDriver.class).to(initiateDriverImpl.class);
    } 
 }
+*/
 
+/*
 class useDriver {
    private initiateDriver initDriver;
 
@@ -84,6 +87,6 @@ class useDriver {
    public WebDriver getTheDriver() {
       return initDriver.getDriver();
    }
-} 
+} */
 
 
