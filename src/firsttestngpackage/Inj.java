@@ -12,6 +12,7 @@ import com.google.inject.Inject;
 import com.google.inject.Injector;
 import com.google.inject.Singleton;
 import org.openqa.selenium.WebDriver;
+import firsttestngpackage.initiateDriverImpl;
 
  public class Inj {
 	 
@@ -27,8 +28,10 @@ import org.openqa.selenium.WebDriver;
 	/* 
 	  public static Injector getInjector() { 
           return injector;
-   }*/
+        }*/
  }
+
+/*
 
 interface initiateDriver {
    public WebDriver getDriver();
@@ -58,6 +61,7 @@ class initiateDriverImpl implements initiateDriver {
    }
    
 }
+*/
 
 //Binding Module
 class useDriverModule extends AbstractModule {
