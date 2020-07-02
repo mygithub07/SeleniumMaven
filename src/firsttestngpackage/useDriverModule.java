@@ -14,7 +14,7 @@ import org.openqa.selenium.WebDriver;
 import firsttestngpackage.initiateDriverImpl;
 import firsttestngpackage.initiateDriver;
 
-class useDriverModule extends AbstractModule {
+public class useDriverModule extends AbstractModule {
    
    @Override
    protected void configure() {   
