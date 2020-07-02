@@ -2,6 +2,6 @@
 package firsttestngpackage;
 import org.openqa.selenium.WebDriver;
 
-interface initiateDriver {
+public interface initiateDriver {
    public WebDriver getDriver();
 }
