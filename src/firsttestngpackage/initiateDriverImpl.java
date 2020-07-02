@@ -15,7 +15,7 @@ import org.openqa.selenium.WebDriver;
 import firsttestngpackage.initiateDriver;
 
 @Singleton
-class initiateDriverImpl implements initiateDriver {
+public class initiateDriverImpl implements initiateDriver {
    WebDriver d; 
     public static String url;
    public initiateDriverImpl() {
