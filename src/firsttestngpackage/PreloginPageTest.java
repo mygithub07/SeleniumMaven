@@ -26,8 +26,10 @@ public class PreloginPageTest {
 	public useDriver usedriver;
 	
 	public  PreloginPageTest(){
-	Inj i = new Inj();	
-	Injector inj = i.injector();
+	//Inj i = new Inj();	
+	//Injector inj = i.injector();
+		
+	Injector inj = Inj.injector();		
 	usedriver = inj.getInstance(useDriver.class);	
 	System.out.println("****usedriver value PreloginPageTest****"+ usedriver);
 
