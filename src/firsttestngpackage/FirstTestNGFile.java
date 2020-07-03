@@ -32,8 +32,9 @@ Inj i = new Inj();
 Injector inj = i.injector();
   usedriver = inj.getInstance(useDriver.class);	
 System.out.println("****usedriver value****"+ usedriver);
-  return usedriver;
+
 }
+	
    @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
     //    System.out.println("driver from FirstTestNGFileTest method " + driver);
