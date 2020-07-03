@@ -27,7 +27,7 @@ public class FirstTestNGFile {
 public useDriver usedriver;
 //public Inj i;
 	
-public useDriver FirstTestNGFile(){
+public  FirstTestNGFile(){
 Inj i = new Inj();	
 Injector inj = i.injector();
   usedriver = inj.getInstance(useDriver.class);	
