@@ -30,7 +30,7 @@ public class PageObjectOne {
 	public useDriver usedriver;
 	public  PageObjectOne()
 	{
-	Inj i = new Inj();	
+	 Inj i =  Inj.getInstance();	
 	Injector inj = i.injector();
 	usedriver = inj.getInstance(useDriver.class);	
 	System.out.println("****usedriver value PageObjectOne****"+ usedriver);
