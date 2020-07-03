@@ -19,7 +19,7 @@ import firsttestngpackage.initiateDriverImpl;
 	 public static Injector injector;
 	
 	 
-	public Injector injector(){
+	public static Injector injector(){
         injector = Guice.createInjector(new useDriverModule());
         initiateDriver initD = new initiateDriverImpl();
         injector.injectMembers(initD);
