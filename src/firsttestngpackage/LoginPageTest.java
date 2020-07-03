@@ -1,15 +1,21 @@
 
 package firsttestngpackage;
-
+import org.openqa.selenium.*;
 import org.testng.annotations.Test;
-import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
-//import firsttestngpackage.PageObjectOne;
-import org.openqa.selenium.WebElement;
-import java.util.ArrayList;
+import java.net.MalformedURLException;
+import org.testng.Assert;
+import org.testng.annotations.*;
 import java.util.List;
+import firsttestngpackage.SelectorRepo;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.log4testng.Logger;
 import org.testng.annotations.Guice;
 import com.google.inject.Inject;
+import com.google.inject.Injector;
+import firsttestngpackage.Inj;
+import firsttestngpackage.useDriver;
 
 
 //@Guice(modules = {DriverInitiate.class})
@@ -17,6 +23,8 @@ public class LoginPageTest {
 
 	//@Inject
      // WebDriver driver;
+	
+	public useDriver usedriver;
 	public static List<WebElement> webelementlist;
 	//public  static  firsttestngpackage.PageObjectOne pgo1;	
 	/*
@@ -25,12 +33,19 @@ public class LoginPageTest {
 	      return driver;
          } */
 	 
+         public  LoginPageTest(){
+	Inj i = new Inj();	
+	Injector inj = i.injector();
+	  usedriver = inj.getInstance(useDriver.class);	
+	System.out.println("****usedriver value LoginPageTest****"+ usedriver);
 
+        }
+	
         @Test(groups={"smoke"})
 	 public void LoginPageTestDriver()throws InterruptedException{
 		//PageObjectOne.goTo(); 
 		
-		//System.out.println("driver from LoginPageTestDriver method " + driver);
+		System.out.println("driver from LoginPageTestDriver method " + usedriver.getTheDriver());
 	 }	
 	
 	@Test(groups={"sanity"})
