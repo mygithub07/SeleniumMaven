@@ -18,6 +18,18 @@ import firsttestngpackage.initiateDriverImpl;
 	 
 	 public static Injector injector;
 	
+	 private static Inj sSoleInstance;
+
+	  private Inj(){}  //private constructor.
+	 
+	 
+	  public static Inj getInstance(){
+        if (sSoleInstance == null){ //if there is no instance available... create new one
+            sSoleInstance = new Inj();
+        }
+
+        return sSoleInstance;
+    }
 	 
 	public static Injector injector(){
         injector = Guice.createInjector(new useDriverModule());
