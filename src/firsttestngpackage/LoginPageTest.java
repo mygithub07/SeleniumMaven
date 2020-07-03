@@ -34,9 +34,10 @@ public class LoginPageTest {
          } */
 	 
          public  LoginPageTest(){
-	Inj i = new Inj();	
-	Injector inj = i.injector();
-	  usedriver = inj.getInstance(useDriver.class);	
+	//Inj i = new Inj();	
+	//Injector inj = i.injector();
+        Injector inj = Inj.injector();
+	 usedriver = inj.getInstance(useDriver.class);	
 	System.out.println("****usedriver value LoginPageTest****"+ usedriver);
 
         }
