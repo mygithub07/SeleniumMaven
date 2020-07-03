@@ -11,11 +11,20 @@ public class PreloginPageTest {
 	
 	//@Inject
      // WebDriver driver;
+	public useDriver usedriver;
+	
+	public  PreloginPageTest(){
+	Inj i = new Inj();	
+	Injector inj = i.injector();
+	usedriver = inj.getInstance(useDriver.class);	
+	System.out.println("****usedriver value PreloginPageTest****"+ usedriver);
+
+        }
 	
 	@Test(groups={"smoke"})
 	public void preloginPageTestDriver(){
-	    System.out.println("PreloginPageTest");
-	   // System.out.println("driver from preloginPageTestDriver method " + driver);
+	   // System.out.println("PreloginPageTest");
+	   System.out.println("driver from preloginPageTestDriver method " + usedriver.getTheDriver());
 	}
 	@Test(groups={"sanity","regression"})
 	public void validateLogo(){
