@@ -18,6 +18,6 @@ public class useDriverModule extends AbstractModule {
    
    @Override
    protected void configure() {   
-      bind(initiateDriver.class).to(initiateDriverImpl.class);
+      bind(initiateDriver.class).to(initiateDriverImpl.class).in(Singleton.class);
    } 
 }
