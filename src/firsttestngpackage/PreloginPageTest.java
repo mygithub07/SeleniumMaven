@@ -1,10 +1,22 @@
 
 package firsttestngpackage;
-
+import org.openqa.selenium.*;
 import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import java.net.MalformedURLException;
+import org.testng.Assert;
+import org.testng.annotations.*;
+import java.util.List;
+import firsttestngpackage.SelectorRepo;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.log4testng.Logger;
 import org.testng.annotations.Guice;
 import com.google.inject.Inject;
-import org.openqa.selenium.WebDriver;
+import com.google.inject.Injector;
+import firsttestngpackage.Inj;
+import firsttestngpackage.useDriver;
+
 
 //@Guice(modules = {DriverInitiate.class})
 public class PreloginPageTest {
