@@ -1,40 +1,48 @@
 
-/*
 package firsttestngpackage;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-//import firsttestngpackage.DriverInitiate;
+import org.openqa.selenium.*;
 import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import java.net.MalformedURLException;
 import org.testng.Assert;
-import com.google.inject.Binder;
-import com.google.inject.Module;
+import org.testng.annotations.*;
+import java.util.List;
+import firsttestngpackage.SelectorRepo;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.log4testng.Logger;
 import org.testng.annotations.Guice;
 import com.google.inject.Inject;
+import com.google.inject.Injector;
 import firsttestngpackage.Inj;
+import firsttestngpackage.useDriver;
 
-@Guice(modules = {DriverInitiate.class})
+//@Guice(modules = {DriverInitiate.class})
 public class PageObjectOne {
 	
-	static WebDriver WDriver;
-	@Inject
-        WebDriver driver;
+	//static WebDriver WDriver;
+	//@Inject
+      //  WebDriver driver;
 	
 	//public static Injector inj = Inj.injector;
 	
 	//public useDriver usedriver = inj.getInstance(useDriver.class);
-	
+	public useDriver usedriver;
+	public  PageObjectOne()
+	{
+	Inj i = new Inj();	
+	Injector inj = i.injector();
+	usedriver = inj.getInstance(useDriver.class);	
+	System.out.println("****usedriver value PageObjectOne****"+ usedriver);
+
+       }
 	@Test(groups={"smoke"})
 	public void pageObjOneTestDriver(){
-		 System.out.println("***pageObjOneTestDriver***");
-		// System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
-	
-	    System.out.println("driver from pageObjOneTestDriver method " + driver);
+		
+	        System.out.println("driver from pageObjOneTestDriver method " + usedriver.getTheDriver());
 	}
+	
+	
 	//public  static WebDriver driver;
        /*
 	  public  void  configure(Binder binder){
@@ -86,4 +94,4 @@ public class PageObjectOne {
 	  }
 	  */
 	  
-//} 
+} 
