@@ -24,7 +24,7 @@ public class LoginPageTest {
 	//@Inject
      // WebDriver driver;
 	
-	public useDriver usedriver;
+	public useDriver usedriver, ud;
 	public static List<WebElement> webelementlist;
 	//public  static  firsttestngpackage.PageObjectOne pgo1;	
 	/*
@@ -34,11 +34,13 @@ public class LoginPageTest {
          } */
 	 
          public  LoginPageTest(){
+        Inj i =  Inj.getInstance();
+	useDriver ud = i.injector();
 	//Inj i = new Inj();	
 	//Injector inj = i.injector();
-        Injector inj = Inj.injector();
-	 usedriver = inj.getInstance(useDriver.class);	
-	System.out.println("****usedriver value LoginPageTest****"+ usedriver);
+      //  Injector inj = Inj.injector();
+	// usedriver = inj.getInstance(useDriver.class);	
+	//System.out.println("****usedriver value LoginPageTest****"+ usedriver);
 
         }
 	
@@ -46,7 +48,7 @@ public class LoginPageTest {
 	 public void LoginPageTestDriver()throws InterruptedException{
 		//PageObjectOne.goTo(); 
 		
-		System.out.println("driver from LoginPageTestDriver method " + usedriver.getTheDriver());
+		System.out.println("driver from LoginPageTestDriver method " + ud.getTheDriver());
 	 }	
 	
 	@Test(groups={"sanity"})
