@@ -24,7 +24,7 @@ public class FirstTestNGFile {
   
  // @Inject  WebDriver driver;
 //public  Injector inj;
-public useDriver usedriver;
+public useDriver usedriver,ud;
 //public Inj i;
 	
 public  FirstTestNGFile(){
