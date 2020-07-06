@@ -13,6 +13,7 @@ import com.google.inject.Injector;
 import com.google.inject.Singleton;
 import org.openqa.selenium.WebDriver;
 import firsttestngpackage.initiateDriverImpl;
+import firsttestngpackage.initiateDriver;
 
 public class useDriver {
    private initiateDriver initDriver;
