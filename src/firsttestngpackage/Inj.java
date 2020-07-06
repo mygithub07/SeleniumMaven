@@ -16,7 +16,7 @@ import firsttestngpackage.initiateDriverImpl;
 
  public class Inj {
 	 
-	 public static Injector injector;
+	 public  Injector injector;
 	
 	 private static Inj sSoleInstance;
 
@@ -31,7 +31,7 @@ import firsttestngpackage.initiateDriverImpl;
         return sSoleInstance;
     }
 	 
-	public static useDriver injector(){
+	public  useDriver injector(){
         injector = Guice.createInjector(new useDriverModule());
         initiateDriver initD = new initiateDriverImpl();
         injector.injectMembers(initD);
