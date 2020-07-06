@@ -23,7 +23,7 @@ public class PreloginPageTest {
 	
 	//@Inject
      // WebDriver driver;
-	public useDriver usedriver;
+	public useDriver usedriver,ud;
 	
 	public  PreloginPageTest(){
 	//Inj i = new Inj();	
