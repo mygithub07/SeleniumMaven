@@ -27,19 +27,20 @@ public class PageObjectOne {
 	//public static Injector inj = Inj.injector;
 	
 	//public useDriver usedriver = inj.getInstance(useDriver.class);
-	public useDriver usedriver;
+	public useDriver usedriver, ud;
 	public  PageObjectOne()
 	{
-	 Inj i =  Inj.getInstance();	
-	Injector inj = i.injector();
-	usedriver = inj.getInstance(useDriver.class);	
-	System.out.println("****usedriver value PageObjectOne****"+ usedriver);
-
+	// Inj i =  Inj.getInstance();	
+	//Injector inj = i.injector();
+	//usedriver = inj.getInstance(useDriver.class);	
+	//System.out.println("****usedriver value PageObjectOne****"+ usedriver);
+	 Inj i =  Inj.getInstance();
+          ud = i.injector();
        }
 	@Test(groups={"smoke"})
 	public void pageObjOneTestDriver(){
 		
-	        System.out.println("driver from pageObjOneTestDriver method " + usedriver.getTheDriver());
+	     System.out.println("driver from FirstTestNGFileTest method " + ud.getTheDriver());
 	}
 	
 	
