@@ -33,7 +33,7 @@ public class PreloginPageTest {
 	//Injector inj = i.injector();
 	// usedriver = inj.getInstance(useDriver.class);	
 	//System.out.println("****usedriver value****"+ usedriver);
-	Inj i = new Inj();	
+	//Inj i = new Inj();	
         Inj i =  Inj.getInstance();
         //Injector inj = i.injector();
         useDriver ud = i.injector();	
