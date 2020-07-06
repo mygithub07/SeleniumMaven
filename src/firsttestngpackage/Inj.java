@@ -13,13 +13,15 @@ import com.google.inject.Injector;
 import com.google.inject.Singleton;
 import org.openqa.selenium.WebDriver;
 import firsttestngpackage.initiateDriverImpl;
+import firsttestngpackage.useDriver;
+
 
  public class Inj {
 	 
 	 public  Injector injector;
-	
+	 public useDriver ud;
 	 private static Inj sSoleInstance;
-
+  
 	  private Inj(){}  //private constructor.
 	 
 	 
@@ -35,8 +37,8 @@ import firsttestngpackage.initiateDriverImpl;
         injector = Guice.createInjector(new useDriverModule());
         initiateDriver initD = new initiateDriverImpl();
         injector.injectMembers(initD);
-	return injector.getInstance(useDriver.class);	
-		
+	ud = injector.getInstance(useDriver.class);	
+	return ud;	
 	}
 	/* 
 	  public static Injector getInjector() { 
