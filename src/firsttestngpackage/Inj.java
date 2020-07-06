@@ -31,11 +31,12 @@ import firsttestngpackage.initiateDriverImpl;
         return sSoleInstance;
     }
 	 
-	public static Injector injector(){
+	public static useDriver injector(){
         injector = Guice.createInjector(new useDriverModule());
         initiateDriver initD = new initiateDriverImpl();
         injector.injectMembers(initD);
-		return injector;
+	return injector.getInstance(useDriver.class);	
+		
 	}
 	/* 
 	  public static Injector getInjector() { 
