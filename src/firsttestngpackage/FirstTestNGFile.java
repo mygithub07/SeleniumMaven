@@ -28,19 +28,21 @@ public useDriver usedriver;
 //public Inj i;
 	
 public  FirstTestNGFile(){
-//Inj i = new Inj();	
+  Inj i = new Inj();	
   Inj i =  Inj.getInstance();
-Injector inj = i.injector();
-  usedriver = inj.getInstance(useDriver.class);	
-System.out.println("****usedriver value****"+ usedriver);
+  //Injector inj = i.injector();
+   useDriver ud = i.injector();
+  //usedriver = inj.getInstance(useDriver.class);	
+ //System.out.println("****usedriver value****"+ usedriver);
+
 
 }
 	
    @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
     //    System.out.println("driver from FirstTestNGFileTest method " + driver);
-	System.out.println("****usedriver value in FirstTestNGFileTest**** " + usedriver);
-       System.out.println("driver from FirstTestNGFileTest method " + usedriver.getTheDriver());
+	System.out.println("****usedriver value in FirstTestNGFileTest**** " + ud);
+       System.out.println("driver from FirstTestNGFileTest method " + ud.getTheDriver());
 	} 
   /*
   @Test(groups={"sanity"}) 
