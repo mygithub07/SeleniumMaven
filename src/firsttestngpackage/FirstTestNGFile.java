@@ -28,10 +28,10 @@ public useDriver usedriver,ud;
 //public Inj i;
 	
 public  FirstTestNGFile(){
-  Inj i = new Inj();	
-  Inj instance =  i.getInstance();
+  //Inj i = new Inj();	
+  Inj i =  Inj.getInstance();
   //Injector inj = i.injector();
-   useDriver ud = instance.injector();
+   useDriver ud = i.injector();
   //usedriver = inj.getInstance(useDriver.class);	
  //System.out.println("****usedriver value****"+ usedriver);
 
