@@ -29,9 +29,9 @@ public useDriver usedriver,ud;
 	
 public  FirstTestNGFile(){
   Inj i = new Inj();	
-  Inj i =  Inj.getInstance();
+  Inj instance =  i.getInstance();
   //Injector inj = i.injector();
-   useDriver ud = i.injector();
+   useDriver ud = instance.injector();
   //usedriver = inj.getInstance(useDriver.class);	
  //System.out.println("****usedriver value****"+ usedriver);
 
