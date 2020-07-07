@@ -41,6 +41,7 @@ public  FirstTestNGFile(){
    @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
     //    System.out.println("driver from FirstTestNGFileTest method " + driver);
+		System.out.println("**** Inj instance from FirstTestNGFileTest **** " + i);
 	System.out.println("****usedriver value in FirstTestNGFileTest**** " + ud);
        System.out.println("driver from FirstTestNGFileTest method " + ud.getTheDriver());
 	} 
