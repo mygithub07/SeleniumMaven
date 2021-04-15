@@ -29,9 +29,9 @@ public Inj i;
 	
 public  FirstTestNGFile(){
   //Inj i = new Inj();	
-   i =  Inj.getInstance();
+  // i =  Inj.getInstance();
   //Injector inj = i.injector();
-   useDriver ud = i.injector();
+  // useDriver ud = i.injector();
   //usedriver = inj.getInstance(useDriver.class);	
  //System.out.println("****usedriver value****"+ usedriver);
 
@@ -40,11 +40,12 @@ public  FirstTestNGFile(){
 	
    @Test(groups={"smoke"})
 	public void FirstTestNGFileTest(){
+		Assert.assertEquals(1,1);
+		System.out.println("printing FirstTestNGFileTest from method..");
     //    System.out.println("driver from FirstTestNGFileTest method " + driver);
-		System.out.println("**** Inj instance from FirstTestNGFileTest **** " + i);
-	System.out.println("****usedriver value in FirstTestNGFileTest**** " + ud);
-       System.out.println("driver from FirstTestNGFileTest method " + ud.getTheDriver());
+       //System.out.println("driver from FirstTestNGFileTest method " + ud.getTheDriver());
 	} 
+	
   /*
   @Test(groups={"sanity"}) 
   public void Suite2Test1() throws InterruptedException{	
