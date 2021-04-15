@@ -34,8 +34,8 @@ public class LoginPageTest {
          } */
 	 
          public  LoginPageTest(){
-        Inj i =  Inj.getInstance();
-	useDriver ud = i.injector();
+      //  Inj i =  Inj.getInstance();
+	 //useDriver ud = i.injector();
 	//Inj i = new Inj();	
 	//Injector inj = i.injector();
       //  Injector inj = Inj.injector();
@@ -44,14 +44,16 @@ public class LoginPageTest {
 
         }
 	
+	/*
         @Test(groups={"smoke"})
 	 public void LoginPageTestDriver()throws InterruptedException{
 		//PageObjectOne.goTo(); 
 		
-		System.out.println("driver from LoginPageTestDriver method " + ud.getTheDriver());
-	 }	
+		//System.out.println("driver from LoginPageTestDriver method " + ud.getTheDriver());
+	 }
+	 */
 	
-	@Test(groups={"sanity"})
+	@Test(groups={"smoke"})
     public void validLoginTest(){
         System.out.println("validLoginTest");
     }
