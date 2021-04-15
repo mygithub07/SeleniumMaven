@@ -34,18 +34,19 @@ public class PreloginPageTest {
 	// usedriver = inj.getInstance(useDriver.class);	
 	//System.out.println("****usedriver value****"+ usedriver);
 	//Inj i = new Inj();	
-        Inj i =  Inj.getInstance();
+        //Inj i =  Inj.getInstance();
         //Injector inj = i.injector();
-        useDriver ud = i.injector();	
+        //useDriver ud = i.injector();	
 
         }
-	
+	/*
 	@Test(groups={"smoke"})
 	public void preloginPageTestDriver(){
 	   // System.out.println("PreloginPageTest");
 	   System.out.println("driver from preloginPageTestDriver method " + ud.getTheDriver());
 	}
-	@Test(groups={"sanity","regression"})
+	*/
+	@Test(groups={"smoke","regression"})
 	public void validateLogo(){
 	    System.out.println("Logo present");
 	}
