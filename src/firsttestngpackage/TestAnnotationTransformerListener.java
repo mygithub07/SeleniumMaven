@@ -19,7 +19,7 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
             Constructor testConstructor, Method testMethod) {  
       
         System.out.println("method name from transformer:  " + testMethod.getName());
-        if (testMethod.getName().toString()=="preloginPageTest") {
+        if (testMethod.getName().toString()=="validateRememberPasswordChrckboxField") {
             list = annotation.getAttributes();
           for (int i = 0; i < list.length; i++)
           { 
